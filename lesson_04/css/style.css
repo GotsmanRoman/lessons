@@ -12,66 +12,60 @@ body {
 * {
   color: rgb(0, 0, 0);
 }
-
+.homework1-container {
+  font-family: "Work Sans";
+}
 .homework1-title {
   color: var(--Gray-900, #132238);
-  font-family: "Work Sans";
   font-size: 38px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 50px; /* 131.579% */
+  line-height: 1.31; /* 131.579% */
 }
 .homework1-title ~ p {
   color: var(--Gray-600, #556070);
   /* Body/Large/400 */
-  font-family: "Work Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 1.33; /* 133.333% */
 }
-
+.homework2-container {
+  font-family: "DM Sans";
+}
 .homework2-title {
   color: var(--Neutral-Colors-Color-800, #1e1b39);
   font-feature-settings: "liga" off, "clig" off;
   /* Special headings/Display 2 */
-  font-family: "DM Sans";
   font-size: 88px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 95px; /* 107.955% */
+  line-height: 1.08; /* 107.955% */
 }
 .homework2-title ~ p {
   color: var(--Neutral-Colors-Neutral-700, #474464);
   font-feature-settings: "liga" off, "clig" off;
   /* Body/Default */
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 42px; /* 175% */
+  line-height: 1.75; /* 175% */
 }
-
+.homework3-container {
+  font-family: Roboto;
+}
 .homework3-title {
   color: var(--Colour-Main-Blue-900, #091133);
   font-feature-settings: "liga" off, "clig" off;
   /* Medium 50 */
-  font-family: Roboto;
   font-size: 50px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 66px; /* 132% */
+  line-height: 1.32; /* 132% */
   letter-spacing: 1px;
 }
 .homework3-title ~ p {
   color: var(--Colour-Main-Blue-500, #505f98);
   font-feature-settings: "liga" off, "clig" off;
   /* Regular 18 */
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 1.67; /* 166.667% */
 }
 
 h1,
