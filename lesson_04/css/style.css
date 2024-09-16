@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,600&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+* {
+  color: rgb(0, 0, 0);
+}
+
+.homework1-title {
+  color: var(--Gray-900, #132238);
+  font-family: "Work Sans";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 131.579% */
+}
+.homework1-title ~ p {
+  color: var(--Gray-600, #556070);
+  /* Body/Large/400 */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.homework2-title {
+  color: var(--Neutral-Colors-Color-800, #1e1b39);
+  font-feature-settings: "liga" off, "clig" off;
+  /* Special headings/Display 2 */
+  font-family: "DM Sans";
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px; /* 107.955% */
+}
+.homework2-title ~ p {
+  color: var(--Neutral-Colors-Neutral-700, #474464);
+  font-feature-settings: "liga" off, "clig" off;
+  /* Body/Default */
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 175% */
+}
+
+.homework3-title {
+  color: var(--Colour-Main-Blue-900, #091133);
+  font-feature-settings: "liga" off, "clig" off;
+  /* Medium 50 */
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px; /* 132% */
+  letter-spacing: 1px;
+}
+.homework3-title ~ p {
+  color: var(--Colour-Main-Blue-500, #505f98);
+  font-feature-settings: "liga" off, "clig" off;
+  /* Regular 18 */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+h1,
+.article-title,
+.owner {
+  line-height: 3;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.article-title {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+h2,
+p {
+  line-height: 1.5;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+}
+.owner {
+  text-decoration: underline dotted rebeccapurple;
+  color: blue;
+  text-transform: uppercase;
+}
