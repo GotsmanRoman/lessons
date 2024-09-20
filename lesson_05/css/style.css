@@ -37,9 +37,7 @@ header {
 
 /* HomeWork 1 START*/
 .homework1-container {
-  width: 539px;
-  height: 421px;
-  margin-left: 163px;
+  max-width: 539px;
 }
 
 .homework1-title {
@@ -50,7 +48,6 @@ header {
   margin-bottom: 20px;
 }
 .homework1-text {
-  height: 164px;
   margin-bottom: 69px;
 }
 .homework1-text > p {
@@ -62,7 +59,7 @@ header {
 }
 /* Тест, шукаємо ліпше рішення */
 .additional-padding {
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .homework1-buttons {
@@ -76,28 +73,24 @@ header {
   height: 36px;
   border-radius: 2px;
   text-align: center;
-  padding: 5px 0;
-  vertical-align: middle;
 }
 .homework1-button-style1 {
   color: #fff;
   background: #111b47;
   margin-right: 30px;
+  padding: 5px 10px;
 }
 .homework1-button-style2 {
   border: 2px solid #091133;
+  padding: 3px 10px 7px 10px;
 }
 /* HomeWork 1 END*/
 
 /* HomeWork 2 START*/
 .homework2-container {
-  width: 520px;
-  height: 629px;
-  margin-left: 163px;
+  max-width: 520px;
 }
 .homework2-text-container {
-  width: 520px;
-  height: 253px;
   margin-bottom: 70px;
 }
 .homework2-title {
@@ -106,9 +99,7 @@ header {
   line-height: 1.33;
   margin-bottom: 16px;
 }
-.homework2-text {
-  height: 140px;
-}
+
 .homework2-text > p {
   color: #6f7cb2;
   font-weight: 400;
@@ -116,21 +107,19 @@ header {
 }
 /* Тест, шукаємо ліпше рішення */
 .additional-padding2 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .homework2-articles {
-  width: 520px;
-  height: 306px;
+  max-width: 520px;
 }
 .homework2-articles-container {
-  height: 306px;
   margin-inline: -15px;
   font-size: 0;
 }
 .homework2-article {
   display: inline-block;
-  width: 245px;
-  height: 138px;
+  max-width: 245px;
+  min-height: 138px;
   margin-bottom: 30px;
   margin-inline: 15px;
 }
@@ -154,23 +143,20 @@ header {
 /* HomeWork 3 START */
 .special {
   display: inline-block;
-  margin-bottom: 100px;
   width: 100%;
   background: #141414;
+  padding: 100px 0;
 }
 .homework3-container {
   margin: 0 auto;
   font-family: Manrope;
-  width: 1597px;
-  height: 901px; /* мало б бути 801px, але так ліпше */
-  margin-top: 100px;
+  max-width: 1597px;
 }
 .homework3-header {
-  height: 125px;
   margin-bottom: 80px;
 }
 .homework3-header-container {
-  width: 1297px;
+  max-width: 1297px;
 }
 .homework3-header-title {
   color: #fff;
@@ -186,18 +172,13 @@ header {
   font-weight: 400;
   line-height: 1.5;
 }
-.homework3-benefits {
-  /* width: 1597px; */
-  height: 596px;
-}
+
 .homework3-benefits-container {
   margin-inline: -15px;
   font-size: 0;
 }
 .homework3-item {
   display: inline-block;
-  width: 512px;
-  height: 283px;
   padding: 50px;
   border-radius: 12px;
   border: 1px solid var(--Black-15, #262626);
@@ -208,15 +189,17 @@ header {
     ),
     #0f0f0f;
 
-  margin-inline: 15px;
+  margin-inline: 13px;
   margin-bottom: 30px;
 }
 .homework3-card-container {
-  width: 412px;
+  max-width: 412px;
 }
 .homework3-card-header {
-  height: 72px;
   margin-bottom: 30px;
+}
+.homework3-card-image {
+  vertical-align: middle;
 }
 .homework3-card-title {
   display: inline-block;
@@ -224,7 +207,8 @@ header {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.5;
-  margin: 18px 0 18px 16px;
+  vertical-align: middle;
+  padding-left: 16px;
 }
 .homework3-card-text {
   color: #999;
