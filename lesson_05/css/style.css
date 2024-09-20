@@ -38,6 +38,7 @@ header {
 /* HomeWork 1 START*/
 .homework1-container {
   max-width: 539px;
+  margin: 0 auto;
 }
 
 .homework1-title {
@@ -89,6 +90,7 @@ header {
 /* HomeWork 2 START*/
 .homework2-container {
   max-width: 520px;
+  margin: 0 auto;
 }
 .homework2-text-container {
   margin-bottom: 70px;
