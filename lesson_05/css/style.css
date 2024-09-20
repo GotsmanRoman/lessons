@@ -122,6 +122,7 @@ header {
   min-height: 138px;
   margin-bottom: 30px;
   margin-inline: 15px;
+  vertical-align: top;
 }
 .homework2-article-image {
   margin-bottom: 14px;
