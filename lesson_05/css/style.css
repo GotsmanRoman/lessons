@@ -175,13 +175,22 @@ header {
   font-weight: 400;
   line-height: 1.5;
 }
-
+.homework3-benefits {
+  max-width: 1597px;
+  margin: 0 auto;
+}
 .homework3-benefits-container {
   margin-inline: -15px;
   font-size: 0;
 }
 .homework3-item {
   display: inline-block;
+  width: 33.333%;
+
+  padding-inline: 15px;
+  margin-bottom: 30px;
+}
+.homework3-card-container {
   padding: 50px;
   border-radius: 12px;
   border: 1px solid var(--Black-15, #262626);
@@ -191,12 +200,6 @@ header {
       rgba(229, 0, 0, 0) 41.32%
     ),
     #0f0f0f;
-
-  margin-inline: 13px;
-  margin-bottom: 30px;
-}
-.homework3-card-container {
-  max-width: 412px;
 }
 .homework3-card-header {
   margin-bottom: 30px;
@@ -220,3 +223,28 @@ header {
   line-height: 1.5;
 }
 /* HomeWork 3 END */
+
+.lending-design-element {
+  max-width: 500px;
+  background-color: green;
+  margin-inline: auto;
+}
+.lending-design-items {
+  margin-left: -5px;
+  margin-right: -5px;
+  font-size: 0;
+}
+.lending-design-item {
+  color: #fff;
+  width: 33.333%;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.lending-design-content {
+  font-size: 24px;
+  padding: 25px;
+  background-color: #091133;
+  text-align: center;
+}
