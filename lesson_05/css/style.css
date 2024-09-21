@@ -120,10 +120,10 @@ header {
 }
 .homework2-article {
   display: inline-block;
-  max-width: 245px;
+  width: 50%;
   min-height: 138px;
   margin-bottom: 30px;
-  margin-inline: 15px;
+  padding-inline: 15px;
   vertical-align: top;
 }
 .homework2-article-image {
@@ -223,28 +223,3 @@ header {
   line-height: 1.5;
 }
 /* HomeWork 3 END */
-
-.lending-design-element {
-  max-width: 500px;
-  background-color: green;
-  margin-inline: auto;
-}
-.lending-design-items {
-  margin-left: -5px;
-  margin-right: -5px;
-  font-size: 0;
-}
-.lending-design-item {
-  color: #fff;
-  width: 33.333%;
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 10px;
-}
-.lending-design-content {
-  font-size: 24px;
-  padding: 25px;
-  background-color: #091133;
-  text-align: center;
-}
