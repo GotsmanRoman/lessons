@@ -186,11 +186,12 @@ header {
 .homework3-item {
   display: inline-block;
   width: 33.333%;
-
   padding-inline: 15px;
   margin-bottom: 30px;
+  vertical-align: top;
 }
 .homework3-card-container {
+  min-height: 285px;
   padding: 50px;
   border-radius: 12px;
   border: 1px solid var(--Black-15, #262626);
