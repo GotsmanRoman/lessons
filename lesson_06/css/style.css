@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: Epilogue, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #091133;
+}
+
+h1 {
+  line-height: 3;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-wrap: wrap;
+}
+footer h3 {
+  text-align: center;
+}
+header {
+  margin-bottom: 100px;
+}
+.homework {
+  margin-bottom: 100px;
+}
+
+/* HomeWork 0 START */
+.homework0-container {
+  padding-left: 30px;
+}
+.homework0-block {
+  margin-bottom: 20px;
+}
+.homework0-block > div {
+  width: 150px;
+  height: 100px;
+  vertical-align: top;
+  display: inline-block;
+  margin-inline: 5px;
+  padding: 5px;
+}
+.homework0-scroll {
+  overflow: scroll;
+}
+.homework0-border {
+  border: 1px dashed red;
+}
+.homework0-border2 {
+  border-block: 1px dashed rgb(55, 0, 255);
+}
+.homework0-border3 {
+  border-block: 3px dotted rgb(55, 0, 255);
+  border-top-color: #e50000;
+}
+.homework0-border4 {
+  border-block: 3px dotted rgb(55, 0, 255);
+  border-inline: 5px solid rgb(255, 0, 0);
+}
+.homework0-border5 {
+  border-radius: 10px;
+  border-block: 3px solid rgb(0, 81, 255);
+  border-inline: 5px solid rgb(217, 255, 0);
+}
+.homework0-border6 {
+  border-radius: 5px 25px 3px 20px;
+  border-block: 3px solid rgb(0, 81, 255);
+  border-inline: 5px solid rgb(217, 255, 0);
+}
+.homework0-decoration {
+  text-decoration: underline;
+}
+.homework0-decoration2 {
+  text-decoration: dotted;
+  text-decoration: double;
+  text-decoration-color: #e50000;
+  text-decoration-line: underline;
+}
+.homework0-outline {
+  outline-width: 5px;
+  outline-color: #f32909;
+  outline-style: dotted;
+}
+.homework0-outline2 {
+  outline-width: 5px;
+  outline-color: #f32909;
+  outline-style: solid;
+}
+.homework0-boxshadow {
+  box-shadow: 1px 1px 13px 5px rgb(0, 81, 255, 0.5);
+}
+.homework0-visibility {
+  visibility: hidden;
+  box-shadow: 1px 1px 13px 5px rgb(0, 81, 255, 0.5);
+}
+.homework0-gradient {
+  color: #fff;
+  /* box-shadow: 1px 1px 13px 5px rgb(0, 81, 255, 0.5); */
+  background: linear-gradient(180deg, rgb(12, 100, 182) 50%, yellow 60%);
+}
+/* HomeWork 0 END */
+
+/* HomeWork 1 START */
+.homework1 {
+  background: #fdf0e9;
+}
+.homework1-container {
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+.homework1-text-container {
+  display: inline-block;
+  padding-top: 77px;
+  color: #391400;
+}
+.homework1-text-span {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #ef6d58;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.homework1-text-title {
+  max-width: 397px;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 114.286%;
+  letter-spacing: -1px;
+  margin-bottom: 26px;
+}
+.homework1-text-description {
+  max-width: 470px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 26px;
+}
+.homework1-text-list {
+  color: rgba(57, 20, 0, 0.64);
+  font-weight: 400;
+  line-height: 200%;
+  max-width: 570px;
+}
+.homework1-list-item {
+  background: url("/lesson_06/img/check.png") 0 0 / 32px no-repeat;
+  padding-left: 48px;
+  margin-bottom: 16px;
+  min-height: 32px;
+}
+.homework1-image-picture {
+  /* float: right; */
+  width: 100%;
+  height: auto;
+}
+/* HomeWork 1 END */
+
+/* HomeWork 2 START */
+.homework2 {
+  background: #141414;
+  font-family: Manrope;
+}
+.homework2-container {
+  max-width: 1627px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+.homework2-header {
+  min-height: 860px;
+
+  background-image: url("/lesson_06/img/vector.png"),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0) 20%, #141414 100%),
+    linear-gradient(to top, rgba(20, 20, 20, 0) 20%, #141414 100%),
+    url("/lesson_06/img/homework2_background.png");
+
+  background-position: center center, center center, center center,
+    center center;
+
+  background-size: 470px, cover, cover, cover;
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+.homework2-text-container {
+  margin-top: -64px;
+  text-align: center;
+}
+.homework2-text-title {
+  max-width: 1096px;
+  color: #fff;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0 auto 14px auto;
+}
+.homework2-text-description {
+  max-width: 1096px;
+  color: #999;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0 auto 50px auto;
+}
+
+.homework2-button-link {
+  min-width: 251px;
+  background: #e50000;
+  border-radius: 8px;
+  padding: 18px 24px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.homework2-button-link span {
+  display: inline-block;
+  background: url(/lesson_06/img/button_icon.png);
+  background-repeat: no-repeat;
+  background-size: 28 28;
+  padding-left: 32px;
+  vertical-align: middle;
+}
+/* HomeWork 2 END */
