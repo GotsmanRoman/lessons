@@ -21,8 +21,6 @@ h1 {
   letter-spacing: 3px;
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  white-space: nowrap;
-  text-wrap: wrap;
 }
 footer h3 {
   text-align: center;
@@ -117,21 +115,21 @@ header {
   background: linear-gradient(180deg, rgb(12, 100, 182) 50%, yellow 60%);
 }
 .homework0-image {
-  background: url("/img/cat.webp") center / 300px no-repeat;
+  background: url("img/cat.webp") center / 300px no-repeat;
 }
 .homework0-image2 {
   box-shadow: 1px 1px 1px 1px black;
-  background: url("/img/cat.webp");
+  background: url("img/cat.webp");
 }
 .homework0-image3 {
   box-shadow: 1px 1px 1px 1px black;
-  background: url("/img/cat.webp");
+  background: url("img/cat.webp");
   background-position: center;
 }
 .homework0-image4 {
   width: 200px;
   box-shadow: 1px 1px 1px 1px black;
-  background: url("/img/cat.webp");
+  background: url("img/cat.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -184,7 +182,7 @@ header {
   max-width: 570px;
 }
 .homework1-list-item {
-  background: url("/img/check.png") 0 0 / 32px no-repeat;
+  background: url("img/check.png") 0 0 / 32px no-repeat;
   padding-left: 48px;
   margin-bottom: 16px;
   min-height: 32px;
@@ -211,10 +209,10 @@ header {
 .homework2-header {
   min-height: 860px;
 
-  background-image: url("/img/vector.png"),
+  background-image: url("img/vector.png"),
     linear-gradient(to bottom, rgba(20, 20, 20, 0) 20%, #141414 100%),
     linear-gradient(to top, rgba(20, 20, 20, 0) 20%, #141414 100%),
-    url("/img/homework2_background.png");
+    url("img/homework2_background.png");
 
   background-position: center center, center center, center center,
     center center;
@@ -258,7 +256,7 @@ header {
 }
 .homework2-button-link span {
   display: inline-block;
-  background: url(/img/button_icon2.png);
+  background: url(img/button_icon2.png);
   background-repeat: no-repeat;
   padding-left: 32px;
   background-position-y: center;
