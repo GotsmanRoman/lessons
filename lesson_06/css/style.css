@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
 
-@import url("fonts.css");
+/* @import url("fonts.css"); */
 @import url("reset.css");
 
 body {
@@ -36,18 +36,27 @@ header {
 
 /* HomeWork 0 START */
 .homework0-container {
-  padding-left: 30px;
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
 }
 .homework0-block {
   margin-bottom: 20px;
 }
 .homework0-block > div {
-  width: 150px;
-  height: 100px;
   vertical-align: top;
   display: inline-block;
   margin-inline: 5px;
   padding: 5px;
+}
+.block {
+  width: 150px;
+  height: 100px;
+}
+.block-image {
+  color: #fff;
+  width: 300px;
+  height: 300px;
 }
 .homework0-scroll {
   overflow: scroll;
@@ -107,6 +116,25 @@ header {
   /* box-shadow: 1px 1px 13px 5px rgb(0, 81, 255, 0.5); */
   background: linear-gradient(180deg, rgb(12, 100, 182) 50%, yellow 60%);
 }
+.homework0-image {
+  background: url("/img/cat.webp") center / 300px no-repeat;
+}
+.homework0-image2 {
+  box-shadow: 1px 1px 1px 1px black;
+  background: url("/img/cat.webp");
+}
+.homework0-image3 {
+  box-shadow: 1px 1px 1px 1px black;
+  background: url("/img/cat.webp");
+  background-position: center;
+}
+.homework0-image4 {
+  width: 200px;
+  box-shadow: 1px 1px 1px 1px black;
+  background: url("/img/cat.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /* HomeWork 0 END */
 
 /* HomeWork 1 START */
@@ -122,6 +150,7 @@ header {
   display: inline-block;
   padding-top: 77px;
   color: #391400;
+  margin-right: 167px;
 }
 .homework1-text-span {
   margin-bottom: 20px;
@@ -155,15 +184,16 @@ header {
   max-width: 570px;
 }
 .homework1-list-item {
-  background: url("/lesson_06/img/check.png") 0 0 / 32px no-repeat;
+  background: url("/img/check.png") 0 0 / 32px no-repeat;
   padding-left: 48px;
   margin-bottom: 16px;
   min-height: 32px;
 }
 .homework1-image-picture {
-  /* float: right; */
   width: 100%;
   height: auto;
+  max-width: 529px;
+  /* float: right; */
 }
 /* HomeWork 1 END */
 
@@ -171,6 +201,7 @@ header {
 .homework2 {
   background: #141414;
   font-family: Manrope;
+  padding-bottom: 30px; /*Просто відступ щоб не пріліпало до низу */
 }
 .homework2-container {
   max-width: 1627px;
@@ -180,10 +211,10 @@ header {
 .homework2-header {
   min-height: 860px;
 
-  background-image: url("/lesson_06/img/vector.png"),
+  background-image: url("/img/vector.png"),
     linear-gradient(to bottom, rgba(20, 20, 20, 0) 20%, #141414 100%),
     linear-gradient(to top, rgba(20, 20, 20, 0) 20%, #141414 100%),
-    url("/lesson_06/img/homework2_background.png");
+    url("/img/homework2_background.png");
 
   background-position: center center, center center, center center,
     center center;
@@ -199,20 +230,20 @@ header {
 .homework2-text-title {
   max-width: 1096px;
   color: #fff;
-  text-align: center;
   font-size: 58px;
   font-weight: 700;
   line-height: 150%;
-  margin: 0 auto 14px auto;
+  margin-bottom: 14px;
+  margin-inline: auto;
 }
 .homework2-text-description {
   max-width: 1096px;
   color: #999;
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 auto 50px auto;
+  margin-bottom: 50px;
+  margin-inline: auto;
 }
 
 .homework2-button-link {
@@ -227,10 +258,17 @@ header {
 }
 .homework2-button-link span {
   display: inline-block;
-  background: url(/lesson_06/img/button_icon.png);
+  background: url(/img/button_icon2.png);
   background-repeat: no-repeat;
-  background-size: 28 28;
   padding-left: 32px;
-  vertical-align: middle;
+  background-position-y: center;
 }
+/* .Варіант 2 */
+/* .homework2-button-link span {
+  display: inline-block;
+  background: url(/img/button_icon.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  padding-left: 32px;
+} */
 /* HomeWork 2 END */
