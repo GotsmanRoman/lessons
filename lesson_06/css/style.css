@@ -146,6 +146,7 @@ header {
   font-size: 0;
 }
 .homework1-text-container {
+  max-width: 470px;
   display: inline-block;
   padding-top: 77px;
   color: #391400;
@@ -171,7 +172,7 @@ header {
   margin-bottom: 26px;
 }
 .homework1-text-description {
-  max-width: 470px;
+  /* max-width: 470px; */
   font-size: 20px;
   font-weight: 400;
   line-height: 160%;
@@ -182,7 +183,7 @@ header {
   color: rgba(57, 20, 0, 0.64);
   font-weight: 400;
   line-height: 200%;
-  max-width: 470px;
+  /* max-width: 470px; */
 }
 .homework1-list-item {
   background: url("../img/check.png") 0 0 / 32px no-repeat;
