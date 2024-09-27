@@ -361,6 +361,12 @@ color: red;
 .homework3-article-header {
   margin-bottom: 68px;
 }
+.homework3-article-header > * {
+  margin-bottom: 20px;
+}
+.homework3-article-header > :last-child {
+  margin-bottom: 0px;
+}
 .homework3-article-link {
 
 font-size: 12px;
@@ -411,6 +417,16 @@ color: #391400;
 }
 .homework3-article-intro {
   margin-bottom: 51px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%; 
+      color:  rgba(57, 20, 0, 0.64);
+}
+.homework3-article-intro > *  {
+  margin-bottom: 32px;
+}
+.homework3-article-intro > :last-child {
+  margin-bottom: 0px;
 }
 .homework3-article-main {
   margin-bottom: 58px;
@@ -423,24 +439,13 @@ color: #391400;
   padding-top: 63px;
 }
 
-
-
-.homework3-intro-text {
-  color:  rgba(57, 20, 0, 0.64);
-font-size: 16px;
-font-weight: 400;
-line-height: 200%; 
-}
-.special {
-  color:  #391400;
-font-size: 20px;
-line-height: 160%;
-margin-bottom: 32px;
-}
-.homework3-article-block {
+.homework3-article-block > *  {
   font-size: 16px;
   font-weight: 400;
   line-height: 200%; 
+}
+.homework3-article-block > *:last-child  {
+margin-bottom: 0px;
 }
 .homework3-article-block:not(:last-child) {
   margin-bottom: 65px;
@@ -453,12 +458,15 @@ margin-bottom: 35px;
 }
 .homework3-block-text {
   color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 34px;
 }
-.homework3-block-text:not(:last-child) {
-margin-bottom: 34px;
+.special {
+  color:  #391400;
+font-size: 20px;
+line-height: 160%;
+margin-bottom: 32px;
 }
 .homework3-block-list {
-  display: inline-block;
 margin-bottom: 32px;
 }
 .unordered > .homework3-block-item::before {
