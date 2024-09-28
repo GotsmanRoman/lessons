@@ -100,7 +100,7 @@ header {
 }
 .homework0-link2:hover {
   background-image: url(../img/icon2.png);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center bottom;
 }
 .homework0-link3 {
@@ -110,23 +110,23 @@ header {
 }
 .homework0-link3:hover ~ .homework0-link4 {
   background-image: url(../img/icon2.png);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center bottom;
 }
 .homework0-link5-link:active {
-color: red;
+  color: red;
 }
 .homework0-link6-link {
-color: rgb(13, 0, 190);
+  color: rgb(13, 0, 190);
 }
 .homework0-link6-link:visited {
-color: red;
+  color: red;
 }
 .homework0-link7-link {
-color: rgb(13, 0, 190);
+  color: rgb(13, 0, 190);
 }
 .homework0-link7-link:focus-visible {
-color: red;
+  color: red;
 }
 .homework0-nth:nth-last-child(1) {
   border: 1px dashed red;
@@ -323,7 +323,7 @@ color: red;
   line-height: 135.714%;
 }
 .homework2-benefits-item::before {
-  vertical-align:text-bottom;
+  vertical-align: text-bottom;
   content: "";
   background-image: url("../img/check_icon.png");
   margin-right: 14px;
@@ -337,10 +337,10 @@ color: red;
 
 /* HomeWork 3 START */
 .homework3 {
-  background-color: #FDF0E9;
+  background-color: #fdf0e9;
 
   font-family: "Epilogue";
-  color:  #391400;
+  color: #391400;
 }
 .homework3-container {
   max-width: 1200px;
@@ -348,7 +348,6 @@ color: red;
   padding-inline: 15px;
   margin: 0 auto;
   font-size: 0;
-
 }
 .homework3-article {
   max-width: 970px;
@@ -368,25 +367,24 @@ color: red;
   margin-bottom: 0px;
 }
 .homework3-article-link {
-
-font-size: 12px;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-margin-bottom: 45px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 45px;
 }
 .homework3-article-title {
   font-size: 56px;
   font-weight: 800;
-  line-height: 114.286%; 
+  line-height: 114.286%;
   letter-spacing: -1px;
   margin-bottom: 28px;
 }
 .homework-article-additional {
-font-size: 16px;
-font-weight: 400;
-line-height: 200% ; 
-color: rgba(57, 20, 0, 0.64);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(57, 20, 0, 0.64);
 }
 .homework3-article-link::before {
   content: "";
@@ -402,14 +400,14 @@ color: rgba(57, 20, 0, 0.64);
 .homework3-additional-text {
   display: inline-block;
 }
-.homework3-additional-text > span:nth-child(2n+2) {
+.homework3-additional-text > span:nth-child(2n + 2) {
   color: #391400;
 }
 .homework-additional-date {
-float: right;
+  float: right;
 }
-.homework-additional-date> span:nth-child(n+2) {
-color: #391400; 
+.homework-additional-date > span:nth-child(n + 2) {
+  color: #391400;
 }
 .homework3-article-image {
   margin-bottom: 74px;
@@ -417,12 +415,12 @@ color: #391400;
 }
 .homework3-article-intro {
   margin-bottom: 51px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 200%; 
-      color:  rgba(57, 20, 0, 0.64);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(57, 20, 0, 0.64);
 }
-.homework3-article-intro > *  {
+.homework3-article-intro > * {
   margin-bottom: 32px;
 }
 .homework3-article-intro > :last-child {
@@ -433,68 +431,68 @@ color: #391400;
 }
 .homework3-article-footer {
   height: 1px;
-  border-top: 1px solid #F3D1BF; 
+  border-top: 1px solid #f3d1bf;
   width: 100%;
   height: 100%;
   padding-top: 63px;
 }
 
-.homework3-article-block > *  {
+.homework3-article-block > * {
   font-size: 16px;
   font-weight: 400;
-  line-height: 200%; 
+  line-height: 200%;
 }
-.homework3-article-block > *:last-child  {
-margin-bottom: 0px;
+.homework3-article-block > *:last-child {
+  margin-bottom: 0px;
 }
 .homework3-article-block:not(:last-child) {
   margin-bottom: 65px;
 }
 .homework3-block-title {
-font-size: 24px;
-font-weight: 700;
-line-height: 133.333%; 
-margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
+  margin-bottom: 35px;
 }
 .homework3-block-text {
   color: rgba(57, 20, 0, 0.64);
   margin-bottom: 34px;
 }
 .special {
-  color:  #391400;
-font-size: 20px;
-line-height: 160%;
-margin-bottom: 32px;
+  color: #391400;
+  font-size: 20px;
+  line-height: 160%;
+  margin-bottom: 32px;
 }
 .homework3-block-list {
-margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .unordered > .homework3-block-item::before {
   display: inline-block;
   content: "";
   width: 8px;
   height: 8px;
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   border-radius: 50%;
   margin-right: 16px;
   vertical-align: middle;
 }
 .ordered > .homework3-block-item {
-list-style-position: inside;
-list-style-type: decimal;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
 .homework3-block-quote {
-font-size: 20px;
-line-height: 160%; 
-margin-top: 69px;
-margin-bottom: 76px;
-padding: 40px 32px 32px 32px;
-background-color: #F9E5DA;
-border-radius: 6px;
+  font-size: 20px;
+  line-height: 160%;
+  margin-top: 69px;
+  margin-bottom: 76px;
+  padding: 40px 32px 32px 32px;
+  background-color: #f9e5da;
+  border-radius: 6px;
 }
 .homework3-quote-text {
-padding-left: 80px;
+  padding-left: 80px;
   text-indent: -80px;
   vertical-align: top;
   display: inline-block;
@@ -506,7 +504,6 @@ padding-left: 80px;
   height: 36px;
   margin-right: 32px;
   vertical-align: top;
-
 }
 .homework3-article-author {
   display: inline-block;
@@ -523,35 +520,33 @@ padding-left: 80px;
   margin-right: 24px;
   vertical-align: middle;
   opacity: 0.8;
-border-radius: 50%;
+  border-radius: 50%;
 }
 .homework3-author-image:hover {
   opacity: 1;
 }
 .homework3-author-info {
   display: inline-block;
-    vertical-align: middle;
-    max-width: 250px;
-    font-weight: 400;
+  vertical-align: middle;
+  max-width: 250px;
+  font-weight: 400;
 }
 .homework3-author-name {
-
-font-size: 20px;
-line-height: 160%; 
-margin-bottom: 6px;
+  font-size: 20px;
+  line-height: 160%;
+  margin-bottom: 6px;
 }
 .homework3-author-position {
   color: rgba(57, 20, 0, 0.64);
-font-size: 14px;
-line-height: 171.429%; 
+  font-size: 14px;
+  line-height: 171.429%;
 }
 .homework3-social-item {
   display: inline-block;
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-
 }
 .homework3-social-item:hover {
   background-color: #e7280b;
@@ -562,22 +557,22 @@ line-height: 171.429%;
 }
 .homework3-social-link:after {
   content: "";
-width: 48px;
+  width: 48px;
   height: 48px;
 }
 .facebook-icon {
-    background-image: url("../img/facebook.png");
-      background-repeat: no-repeat;
+  background-image: url("../img/facebook.png");
+  background-repeat: no-repeat;
   background-position: center;
 }
 .twitter-icon {
-    background-image: url("../img/twitter.png");
-      background-repeat: no-repeat;
+  background-image: url("../img/twitter.png");
+  background-repeat: no-repeat;
   background-position: center;
 }
 .linkedin-icon {
-    background-image: url("../img/linkedin.png");
-      background-repeat: no-repeat;
+  background-image: url("../img/linkedin.png");
+  background-repeat: no-repeat;
   background-position: center;
 }
 /* HomeWork 3 END */
@@ -598,332 +593,332 @@ width: 48px;
   margin: 0 auto;
   width: 800px;
   height: 800px;
-  background-color: #361a0a;
+  /* background-color: #525b8d; */
+  background-image: url("../img/game_background.jpg");
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
   /* margin-bottom: 50px; */
 }
 .homework4-field-line {
   visibility: hidden;
-  background-color: #ffe600d4;
+  background-color: rgba(255, 255, 0, 0.9);
+  font-size: 16px;
+  text-align: center;
 }
 .start {
   visibility: visible;
   margin-left: 30px;
   width: 50px;
   height: 50px;
-  background-color: #ffe600d4;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  font-size: 12px;
+  text-align: center;
+  padding-block: 15px;
+  text-transform: uppercase;
 }
 .finish {
-width: 30px;
+  width: 50px;
   height: 30px;
   display: block;
   margin-left: 750px;
   margin-top: 0px;
-  background-color: #029b02;
+  background-color: rgba(42, 115, 250, 0.9);
+
+  color: #FFF;
+    font-size: 12px;
+  text-align: center;
+  padding-block: 5px;
+  text-transform: uppercase;
 }
 .start:hover ~ .line1 {
-visibility: visible;
+  visibility: visible;
 }
-
-.line1:hover {
-visibility: visible;
-}
+.line1:hover,
 .line1:hover ~ .line2 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line2:hover {
-visibility: visible;
-}
+.line2:hover,
 .line2:hover ~ .line3 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line3:hover {
-visibility: visible;
-}
+.line3:hover,
 .line3:hover ~ .line4 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line4:hover {
-visibility: visible;
-}
+.line4:hover,
 .line4:hover ~ .line5 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line5:hover {
-visibility: visible;
-}
+.line5:hover,
 .line5:hover ~ .line6 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line6:hover {
-visibility: visible;
-}
+.line6:hover,
 .line6:hover ~ .line7 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line7:hover {
-visibility: visible;
-}
+.line7:hover,
 .line7:hover ~ .line8 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line8:hover {
-visibility: visible;
-}
+.line8:hover,
 .line8:hover ~ .line9 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line9:hover {
-visibility: visible;
-}
+.line9:hover,
 .line9:hover ~ .line10 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line10:hover {
-visibility: visible;
-}
+.line10:hover,
 .line10:hover ~ .line11 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line11:hover {
-visibility: visible;
-}
+.line11:hover,
 .line11:hover ~ .line12 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line12:hover {
-visibility: visible;
-}
+.line12:hover,
 .line12:hover ~ .line13 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line13:hover {
-visibility: visible;
-}
+.line13:hover,
 .line13:hover ~ .line14 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line14:hover {
-visibility: visible;
-}
+.line14:hover,
 .line14:hover ~ .line15 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line15:hover {
-visibility: visible;
-}
+.line15:hover,
 .line15:hover ~ .line16 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line16:hover {
-visibility: visible;
-}
+.line16:hover,
 .line16:hover ~ .line17 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line17:hover {
-visibility: visible;
-}
+.line17:hover,
 .line17:hover ~ .line18 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line18:hover {
-visibility: visible;
-}
+.line18:hover,
 .line18:hover ~ .line19 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line19:hover {
-visibility: visible;
-}
+.line19:hover,
 .line19:hover ~ .line20 {
-visibility: visible;
+  visibility: visible;
 }
 
-.line20:hover {
-visibility: visible;
-}
+.line20:hover,
 .line20:hover ~ .finish {
-visibility: visible;
+  visibility: visible;
 }
 
-.finish:hover {
-visibility: visible;
-}
+.finish:hover,
 .finish:hover ~ .homework4-game-message {
-visibility: visible;
+  visibility: visible;
 }
 .line1 {
-margin-left: 30px;
+  margin-left: 30px;
   width: 45px;
   height: 100px;
+  padding-block: 40px;
 }
 .line2 {
-width: 150px;
+  width: 150px;
   height: 35px;
   margin-left: 30px;
+  padding-block: 10px;
 }
 .line3 {
-width: 200px;
+  width: 200px;
   height: 30px;
   margin-left: 180px;
   margin-top: -30px;
+  padding-block: 6px;
 }
 .line4 {
-width: 270px;
+  width: 270px;
   height: 25px;
   margin-left: 380px;
   margin-top: -30px;
-    
-  
+  padding-block: 5px;
 }
 .line5 {
-width: 130px;
+  width: 130px;
   height: 20px;
   margin-left: 650px;
   margin-top: -30px;
+  padding-block: 2px;
 }
 .line6 {
   width: 30px;
   height: 120px;
   display: block;
   margin-left: 750px;
+  writing-mode: sideways-lr;
+  padding-block: 7px;
 }
 .line7 {
-width: 20px;
+  width: 20px;
   height: 120px;
   display: block;
   margin-left: 750px;
-
-    
-  
+    writing-mode: sideways-lr;
+  padding-block: 2px;
 }
 .line8 {
-width: 270px;
+  width: 270px;
   height: 40px;
   display: block;
   margin-left: 500px;
+  padding-block: 10px;
 }
 .line9 {
-width: 300px;
+  width: 300px;
   height: 20px;
   display: block;
   margin-left: 200px;
   margin-top: -20px;
+  padding-block: 2px;
 }
 .line10 {
-width: 30px;
+  width: 30px;
   height: 120px;
   display: block;
   margin-left: 200px;
+
+      writing-mode: sideways-lr;
+  padding-block: 7px;
 }
 .line11 {
-width: 190px;
+  width: 190px;
   height: 40px;
   display: block;
   margin-left: 40px;
+  padding-block: 10px;
 }
 .line12 {
-width: 15px;
+  width: 15px;
   height: 25px;
   display: block;
   margin-left: 65px;
+
+  font-size: 12px;
+  writing-mode: sideways-lr;
+  padding-block: 1px;
 }
 .line13 {
-width: 230px;
+  width: 230px;
   height: 35px;
   display: block;
   margin-left: 65px;
+
+  padding-block: 10px;
 }
 .line14 {
-width: 25px;
+  width: 25px;
   height: 170px;
   display: block;
   margin-left: 295px;
   margin-top: -170px;
+
+    writing-mode: sideways-lr;
+  padding-block: 5px;
 }
 .line15 {
-width: 230px;
+  width: 230px;
   height: 20px;
   display: block;
   margin-left: 320px;
   margin-top: -170px;
 
-    
-  
+    padding-block: 1px;
 }
 .line16 {
-width: 100px;
+  width: 100px;
   height: 15px;
   display: block;
   margin-left: 550px;
   margin-top: -20px;
+
+  padding-block: 2px;
+    font-size: 12px;
 }
 .line17 {
-width: 35px;
+  width: 35px;
   height: 110px;
   display: block;
   margin-left: 650px;
   margin-top: -15px;
 
-    
-
+  writing-mode: sideways-lr;
+  padding-block: 10px;
 }
 .line18 {
-width: 120px;
+  width: 120px;
   height: 15px;
   display: block;
   margin-left: 650px;
   margin-top: 0px;
+
+    padding-block: 2px;
+    font-size: 12px;
 }
 .line19 {
-width: 15px;
+  width: 15px;
   height: 70px;
   display: block;
   margin-left: 755px;
   margin-top: 0px;
 
-    
-  
+  writing-mode: sideways-lr;
+      padding-block: 2px;
+    font-size: 12px;
 }
 .line20 {
-width: 10px;
+  width: 10px;
   height: 75px;
   display: block;
   margin-left: 760px;
   margin-top: 0px;
 
-    
-  
+    writing-mode: sideways-lr;
+    font-size: 10px;
 }
 
 .homework4-game-message {
   text-align: center;
-margin-top: -150px;
+  margin-top: -150px;
   margin-left: 200px;
 
   visibility: hidden;
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ebde23;
+  color: rgba(255, 255, 0, 0.9);
   text-decoration: underline;
   letter-spacing: 5px;
 }
