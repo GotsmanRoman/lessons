@@ -593,13 +593,11 @@ header {
   margin: 0 auto;
   width: 800px;
   height: 800px;
-  /* background-color: #525b8d; */
-  background-image: url("../img/game_background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 800px;
-  /* margin-bottom: 50px; */
+  background: url("../img/planets.png") 1050px -150px / 400px no-repeat fixed,
+    url("../img/ufo3.png") -15px 600px / 250px no-repeat,
+    url("../img/game_background.jpg") center / 800px no-repeat fixed;
+  box-shadow: inset 5px 5px 150px 10px black;
+  margin-bottom: 10px;
 }
 .homework4-field-line {
   visibility: hidden;
@@ -623,11 +621,9 @@ header {
 .finish {
   width: 110px;
   height: 30px;
-  display: block;
   margin-left: 660px;
   margin-top: 0px;
   background-color: rgba(42, 115, 250, 0.9);
-
   color: #fff;
   font-size: 12px;
   text-align: center;
@@ -652,6 +648,7 @@ header {
   ) {
   visibility: hidden;
 }
+
 /* Варіант №2 */
 
 /* Варіант №1 */
@@ -800,7 +797,6 @@ header {
 .line6 {
   width: 30px;
   height: 120px;
-  display: block;
   margin-left: 750px;
   writing-mode: sideways-lr;
   padding-block: 7px;
@@ -808,7 +804,6 @@ header {
 .line7 {
   width: 20px;
   height: 120px;
-  display: block;
   margin-left: 750px;
   writing-mode: sideways-lr;
   padding-block: 2px;
@@ -816,14 +811,12 @@ header {
 .line8 {
   width: 270px;
   height: 40px;
-  display: block;
   margin-left: 500px;
   padding-block: 10px;
 }
 .line9 {
   width: 300px;
   height: 20px;
-  display: block;
   margin-left: 200px;
   margin-top: -20px;
   padding-block: 2px;
@@ -831,7 +824,6 @@ header {
 .line10 {
   width: 30px;
   height: 120px;
-  display: block;
   margin-left: 200px;
   writing-mode: sideways-lr;
   padding-block: 7px;
@@ -839,14 +831,12 @@ header {
 .line11 {
   width: 190px;
   height: 40px;
-  display: block;
   margin-left: 40px;
   padding-block: 10px;
 }
 .line12 {
   width: 15px;
   height: 25px;
-  display: block;
   margin-left: 65px;
   font-size: 12px;
   writing-mode: sideways-lr;
@@ -855,14 +845,12 @@ header {
 .line13 {
   width: 230px;
   height: 35px;
-  display: block;
   margin-left: 65px;
   padding-block: 10px;
 }
 .line14 {
   width: 25px;
   height: 170px;
-  display: block;
   margin-left: 295px;
   margin-top: -170px;
   writing-mode: sideways-lr;
@@ -871,7 +859,6 @@ header {
 .line15 {
   width: 230px;
   height: 20px;
-  display: block;
   margin-left: 320px;
   margin-top: -170px;
   padding-block: 1px;
@@ -879,7 +866,6 @@ header {
 .line16 {
   width: 100px;
   height: 15px;
-  display: block;
   margin-left: 550px;
   margin-top: -20px;
   padding-block: 2px;
@@ -888,7 +874,6 @@ header {
 .line17 {
   width: 35px;
   height: 110px;
-  display: block;
   margin-left: 650px;
   margin-top: -15px;
   writing-mode: sideways-lr;
@@ -897,7 +882,6 @@ header {
 .line18 {
   width: 120px;
   height: 15px;
-  display: block;
   margin-left: 650px;
   margin-top: 0px;
   padding-block: 2px;
@@ -906,7 +890,6 @@ header {
 .line19 {
   width: 15px;
   height: 70px;
-  display: block;
   margin-left: 755px;
   margin-top: 0px;
   writing-mode: sideways-lr;
@@ -916,7 +899,6 @@ header {
 .line20 {
   width: 10px;
   height: 75px;
-  display: block;
   margin-left: 760px;
   margin-top: 0px;
   writing-mode: sideways-lr;
@@ -934,5 +916,17 @@ header {
   color: rgba(255, 255, 0, 0.9);
   text-decoration: underline;
   letter-spacing: 5px;
+}
+.homework4-images-owner {
+  font-family: "Oswald";
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+.homework4-images-owner:hover {
+  text-decoration: dashed;
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
 }
 /* HomeWork 4 END */
