@@ -167,7 +167,7 @@ header {
   display: inline-block;
   max-width: 675px;
   margin-right: 141px;
-  margin-top: 200px;
+  padding-top: 200px;
 }
 .homework1-list-container {
   display: inline-block;
@@ -274,9 +274,9 @@ header {
 .homework2-subscribe-item {
   display: inline-block;
   border-radius: 56px;
-  padding: 24px 24px 24px 24px;
+  padding: 24px 24px 58px 24px;
   background-color: #f0f0f6;
-  max-width: 542px;
+  max-width: 543px;
   width: 100%;
   vertical-align: top;
   margin-bottom: 106px;
@@ -313,19 +313,24 @@ header {
   opacity: 0.6;
 }
 .homework2-benefits-list {
-  margin-left: 63px;
-  max-width: 482px;
-  margin-bottom: 34px;
-  text-indent: -50px;
+  padding-left: 13px;
 }
 .homework2-benefits-item {
   font-size: 28px;
   line-height: 135.714%;
 }
+.homework2-benefits-item span {
+  display: inline-block;
+  max-width: 432px;
+  vertical-align: top;
+}
 .homework2-benefits-item::before {
-  vertical-align: text-bottom;
+  display: inline-block;
+  vertical-align: top;
   content: "";
   background-image: url("../img/check_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
   margin-right: 14px;
   width: 36px;
   height: 36px;
@@ -343,10 +348,8 @@ header {
   color: #391400;
 }
 .homework3-container {
-  max-width: 1200px;
   padding-block: 100px;
   padding-inline: 15px;
-  margin: 0 auto;
   font-size: 0;
 }
 .homework3-article {
