@@ -636,135 +636,6 @@ header {
   text-transform: uppercase;
 }
 
-/* Варіант №2 */
-.homework4-field-line:has(+ .homework4-field-line:hover),
-.homework4-field-line:hover,
-.finish:hover ~ .homework4-game-message,
-.homework4-field-line:hover + .homework4-field-line {
-  visibility: visible;
-}
-
-.homework4-field:has(> :hover)
-  .homework4-field-line:not(
-    :hover,
-    :has(* + :hover),
-    .homework4-field-line:hover + *
-  ) {
-  visibility: hidden;
-}
-
-/* Варіант №2 */
-
-/* Варіант №1 */
-/* .start:hover ~ .line1 {
-  visibility: visible;
-}
-.line1:hover,
-.line1:hover ~ .line2 {
-  visibility: visible;
-}
-
-.line2:hover,
-.line2:hover ~ .line3 {
-  visibility: visible;
-}
-
-.line3:hover,
-.line3:hover ~ .line4 {
-  visibility: visible;
-}
-
-.line4:hover,
-.line4:hover ~ .line5 {
-  visibility: visible;
-}
-
-.line5:hover,
-.line5:hover ~ .line6 {
-  visibility: visible;
-}
-
-.line6:hover,
-.line6:hover ~ .line7 {
-  visibility: visible;
-}
-
-.line7:hover,
-.line7:hover ~ .line8 {
-  visibility: visible;
-}
-
-.line8:hover,
-.line8:hover ~ .line9 {
-  visibility: visible;
-}
-
-.line9:hover,
-.line9:hover ~ .line10 {
-  visibility: visible;
-}
-
-.line10:hover,
-.line10:hover ~ .line11 {
-  visibility: visible;
-}
-
-.line11:hover,
-.line11:hover ~ .line12 {
-  visibility: visible;
-}
-
-.line12:hover,
-.line12:hover ~ .line13 {
-  visibility: visible;
-}
-
-.line13:hover,
-.line13:hover ~ .line14 {
-  visibility: visible;
-}
-
-.line14:hover,
-.line14:hover ~ .line15 {
-  visibility: visible;
-}
-
-.line15:hover,
-.line15:hover ~ .line16 {
-  visibility: visible;
-}
-
-.line16:hover,
-.line16:hover ~ .line17 {
-  visibility: visible;
-}
-
-.line17:hover,
-.line17:hover ~ .line18 {
-  visibility: visible;
-}
-
-.line18:hover,
-.line18:hover ~ .line19 {
-  visibility: visible;
-}
-
-.line19:hover,
-.line19:hover ~ .line20 {
-  visibility: visible;
-}
-
-.line20:hover,
-.line20:hover ~ .finish {
-  visibility: visible;
-}
-
-.finish:hover,
-.finish:hover ~ .homework4-game-message {
-  visibility: visible;
-} */
-/* Варіант №1 */
-
 .line1 {
   margin-left: 30px;
   width: 45px;
@@ -932,5 +803,10 @@ header {
   color: rgb(6, 49, 167);
   text-decoration: underline dotted 3px;
   text-underline-offset: 6px;
+}
+.homework4-field-line:hover + .homework4-field-line,
+.homework4-field-line:hover + .homework4-game-message,
+.homework4-field-line:hover {
+  visibility: visible;
 }
 /* HomeWork 4 END */
