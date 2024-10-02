@@ -58,134 +58,43 @@ header {
   text-underline-offset: 6px;
 }
 
-/* HomeWork 0 START */
-.homework0-container {
-  max-width: 1200px;
-  padding-inline: 15px;
-  margin: 0 auto;
-}
-.homework0-block {
-  margin-bottom: 20px;
-}
-.homework0-block > div {
-  vertical-align: top;
-  display: inline-block;
-  margin-inline: 5px;
-  padding: 5px;
-}
-.homework0-block2 > div {
-  vertical-align: top;
-  display: inline-block;
-  margin-inline: 5px;
-}
-.block {
-  width: 150px;
-  height: 100px;
-}
-.block-image {
-  color: #fff;
-  width: 300px;
-  height: 300px;
-}
-.homework0-link {
-  color: red;
-}
-.homework0-link:hover {
-  color: rgb(60, 13, 228);
-}
-.homework0-link2 {
-  background-image: url(../img/icon1.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.homework0-link2:hover {
-  background-image: url(../img/icon2.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.homework0-link3 {
-  background-image: url(../img/icon1.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.homework0-link3:hover ~ .homework0-link4 {
-  background-image: url(../img/icon2.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.homework0-link5-link:active {
-  color: red;
-}
-.homework0-link6-link {
-  color: rgb(13, 0, 190);
-}
-.homework0-link6-link:visited {
-  color: red;
-}
-.homework0-link7-link {
-  color: rgb(13, 0, 190);
-}
-.homework0-link7-link:focus-visible {
-  color: red;
-}
-.homework0-nth:nth-last-child(1) {
-  border: 1px dashed red;
-}
-.homework0-nth:nth-child(1) {
-  background-color: #e08c5c;
-}
-.homework0-nth:nth-child(even) {
-  background-color: #06b4b4;
-}
-.homework0-nth:nth-child(3) {
-  background-color: #a30863;
-}
-.homework0-nth2 > p {
-  height: 100%;
-  padding: 5px;
-}
-.homework0-nth2 > p:nth-of-type(1) {
-  background-color: #a30863;
-}
-.homework0-nth2 > *:not(.not-supported) {
-  background-color: #e47900;
-}
-/* HomeWork 0 END */
-
 /* HomeWork 1 START */
 .homework1 {
-  background-color: #fff;
+  background-color: #212222;
+  color: #ddd;
 }
 .homework1-container {
-  max-width: 1200px;
+  max-width: 1400px;
   padding-inline: 15px;
   margin: 0 auto;
   font-size: 0;
-  background-color: #1e4c61;
   padding-block: 100px;
 }
 .homework1-list-container:not(:last-child) {
   margin-bottom: 100px;
 }
+.homework1-list-title {
+  font-size: 26px;
+  text-align: center;
+}
 .homework1-list-icons {
-  color: #6e6c83;
   font-size: 24px;
   font-weight: 400;
   line-height: 175%;
   font-size: 0;
   line-height: 1.5;
   display: inline-block;
-    vertical-align: top;
+  vertical-align: top;
 }
 .homework1-list-icons:not(:last-child) {
   margin-right: 100px;
+  width: 800px;
 }
 .homework1-list-icon:not(:last-child) {
   margin-bottom: 15px;
 }
 .homework1-list-icon {
   line-height: 4;
-
 }
 .homework1-list-icon > * {
   margin-right: 15px;
@@ -195,46 +104,49 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
+  text-align: center;
 }
 .homework1-icon-image {
   vertical-align: middle;
 }
-.icon-image {
-  /* width: 80px;
-  height: 80px; */
-}
 .homework1-icon-description {
+  display: inline-block;
   vertical-align: middle;
-    font-size: 20px;
+  font-size: 20px;
 }
-.bigger_icon {
-  width: 80px;
-  height: 80px;
+.fix {
+  width: 40%;
 }
 
 .homework1-icon-container {
   display: inline-block;
-  width: 150px;
+  width: 200px;
   text-align: center;
 }
 .homework1-icon-container2 {
   display: inline-block;
+  width: 200px;
+
+  text-align: center;
+}
+.homework1-icon-link {
   width: 80px;
   height: 80px;
-    padding-block: 20px;
-    text-align: center;
+  padding-block: 20px;
+
+  text-align: center;
 }
 .samples1-icon {
   width: 178px;
   height: 80px;
   margin-right: 0;
 }
-.samples1-link:hover .samples1-container{
-background-color: #2a67da;
-box-shadow: 2px 2px 2px #020f14;
+.samples1-link {
+  width: 170px;
+  padding: 0;
 }
-.samples2-container {
-  background-color: #EF6D58;
+.samples2-link {
+  background-color: #ef6d58;
   border-radius: 50%;
 }
 .samples2-icon {
@@ -242,24 +154,36 @@ box-shadow: 2px 2px 2px #020f14;
   height: 40px;
   margin-right: 0;
 }
-.samples2-link:hover .samples2-container{
-background-color: #2a67da;
-box-shadow: 2px 2px 2px #020f14;
+.samples2-link:hover {
+  background-color: #2a67da;
+  box-shadow: 2px 2px 2px #020f14;
 }
 .samples3-container {
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   border-radius: 50%;
+}
+.samples3-link {
+  border-radius: 50%;
+  outline: 1px solid #ffffff;
+  width: 80px;
+  height: 80px;
+}
+.samples3-link:hover {
+  outline: 2px dashed #e42e12;
 }
 .samples3-icon {
   width: 40px;
   height: 40px;
   margin-right: 0;
 }
-.samples3-link:hover .samples3-container{
-background-color: #e42e12;
-box-shadow: 2px 2px 2px #020f14;
+.samples4-link {
+  background-color: #ef6d58;
+  border-radius: 50%;
 }
-.present-container {
+.samples4-link:hover {
+  background-color: #0cc798;
+}
+/* .present-container {
   background-image: url("../img/icons/star_icon.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -267,6 +191,11 @@ box-shadow: 2px 2px 2px #020f14;
   width: 80px;
   height: 80px;
   padding-block: 24px;
+} */
+
+.play-icon {
+  height: 40px;
+  margin-right: 0;
 }
 .present-icon {
   width: 30px;
@@ -274,46 +203,147 @@ box-shadow: 2px 2px 2px #020f14;
   margin-right: 0;
 }
 
-
 .homework1-list-logos {
-  color: #6e6c83;
-  font-size: 24px;
   font-weight: 400;
   line-height: 175%;
   font-size: 0;
   line-height: 1.5;
   display: inline-block;
+  vertical-align: top;
 }
 .homework1-list-logos:not(:last-child) {
   margin-right: 100px;
+  width: 800px;
 }
-.homework1-list-logos:not(:last-child) {
-  margin-bottom: 15px;
-}
+
 .homework1-list-logo {
-  line-height: 4;
+  font-size: 0;
 }
-.homework1-list-logo *{
+.homework1-list-logo > :not(:last-child) {
   margin-right: 15px;
+}
+.homework1-list-logo:not(:last-child) {
+  margin-bottom: 15px;
 }
 .homework1-logo-number {
   width: 40px;
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
+  line-height: 4;
+  text-align: center;
 }
 .homework1-logo-image {
   vertical-align: middle;
 }
-.logo-image {
-
-}
 .homework1-logo-description {
+  display: inline-block;
   vertical-align: middle;
-    font-size: 20px;
+  font-size: 20px;
 }
 .homework1-logo-container {
   display: inline-block;
-  width: 150px;
+  width: 200px;
+  font-size: 20px;
+  line-height: 4;
+  vertical-align: middle;
+  text-align: center;
 }
+.logo-container {
+  background-color: #fdf0e9;
+}
+
+.homework1-list-pictures {
+  font-weight: 400;
+  line-height: 175%;
+  font-size: 0;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: top;
+}
+.homework1-list-pictures:not(:last-child) {
+  margin-right: 100px;
+  width: 800px;
+}
+
+.homework1-list-picture {
+  font-size: 0;
+}
+.homework1-list-picture > :not(:last-child) {
+  margin-right: 15px;
+}
+.homework1-list-picture:not(:last-child) {
+  margin-bottom: 15px;
+}
+.homework1-picture-number {
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 4;
+  text-align: center;
+}
+.homework1-picture-image {
+  vertical-align: middle;
+}
+.logo-image {
+}
+.homework1-picture-description {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.homework1-picture-container {
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  line-height: 4;
+  vertical-align: middle;
+  height: 150px;
+}
+.homework1-picture-image {
+  width: 100%;
+}
+/* .homework1-list-picture:nth-child(1) > .homework1-picture-container::after {
+  content: "";
+  background-image: image-set(
+    url("../img/images/header_image.webp") 1x,
+    url("../img/images/header_image_2x.webp") 2x,
+    url("../img/images/header_image_3x.webp") 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.homework1-list-picture:nth-child(2) > .homework1-picture-container::after {
+  content: "";
+  background-image: image-set(
+    url("../img/images/player_background.webp") 1x,
+    url("../img/images/player_background_2x.webp") 2x,
+    url("../img/images/player_background_3x.webp") 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.homework1-list-picture:nth-child(3) > .homework1-picture-container::after {
+  content: "";
+  background-image: image-set(
+    url("../img/images/bottom_image.png") 1x,
+    url("../img/images/bottom_image_2x.png") 2x,
+    url("../img/images/bottom_image_3x.png") 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+} */
 /* HomeWork 1 END */
