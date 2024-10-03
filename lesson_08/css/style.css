@@ -64,28 +64,29 @@ header {
   color: #ddd;
 }
 .homework1-container {
-  max-width: 1400px;
+  max-width: 1230px;
   padding-inline: 15px;
   margin: 0 auto;
-  font-size: 0;
   padding-block: 100px;
 }
 .homework1-list-container:not(:last-child) {
   margin-bottom: 100px;
 }
 .homework1-list-title {
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .homework1-list-icons {
   font-size: 24px;
   font-weight: 400;
-  line-height: 175%;
-  font-size: 0;
-  line-height: 1.5;
   display: inline-block;
   vertical-align: top;
 }
+
 .homework1-list-icons:not(:last-child) {
   margin-right: 100px;
   width: 800px;
@@ -95,8 +96,9 @@ header {
 }
 .homework1-list-icon {
   line-height: 4;
+  font-size: 0;
 }
-.homework1-list-icon > * {
+.homework1-list-icon > *:not(:last-child) {
   margin-right: 15px;
 }
 .homework1-icon-number {
@@ -110,7 +112,6 @@ header {
   vertical-align: middle;
 }
 .homework1-icon-description {
-  display: inline-block;
   vertical-align: middle;
   font-size: 20px;
 }
@@ -133,8 +134,6 @@ header {
   width: 80px;
   height: 80px;
   padding-block: 20px;
-
-  text-align: center;
 }
 .samples1-icon {
   width: 178px;
@@ -183,15 +182,6 @@ header {
 .samples4-link:hover {
   background-color: #0cc798;
 }
-/* .present-container {
-  background-image: url("../img/icons/star_icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 80px;
-  height: 80px;
-  padding-block: 24px;
-} */
 
 .play-icon {
   height: 40px;
@@ -205,9 +195,6 @@ header {
 
 .homework1-list-logos {
   font-weight: 400;
-  line-height: 175%;
-  font-size: 0;
-  line-height: 1.5;
   display: inline-block;
   vertical-align: top;
 }
@@ -218,6 +205,7 @@ header {
 
 .homework1-list-logo {
   font-size: 0;
+  line-height: 4;
 }
 .homework1-list-logo > :not(:last-child) {
   margin-right: 15px;
@@ -230,7 +218,6 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
-  line-height: 4;
   text-align: center;
 }
 .homework1-logo-image {
@@ -245,7 +232,6 @@ header {
   display: inline-block;
   width: 200px;
   font-size: 20px;
-  line-height: 4;
   vertical-align: middle;
   text-align: center;
 }
@@ -255,9 +241,6 @@ header {
 
 .homework1-list-pictures {
   font-weight: 400;
-  line-height: 175%;
-  font-size: 0;
-  line-height: 1.5;
   display: inline-block;
   vertical-align: top;
 }
@@ -268,6 +251,7 @@ header {
 
 .homework1-list-picture {
   font-size: 0;
+  line-height: 4;
 }
 .homework1-list-picture > :not(:last-child) {
   margin-right: 15px;
@@ -280,14 +264,9 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
-  line-height: 4;
   text-align: center;
 }
-.homework1-picture-image {
-  vertical-align: middle;
-}
-.logo-image {
-}
+
 .homework1-picture-description {
   display: inline-block;
   vertical-align: middle;
@@ -297,12 +276,14 @@ header {
   display: inline-block;
   width: 200px;
   font-size: 20px;
-  line-height: 4;
   vertical-align: middle;
   height: 150px;
 }
 .homework1-picture-image {
+  vertical-align: middle;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* .homework1-list-picture:nth-child(1) > .homework1-picture-container::after {
   content: "";
