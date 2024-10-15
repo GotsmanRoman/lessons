@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #091133;
+}
+
+h1 {
+  line-height: 3;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+footer {
+  min-height: 100px;
+  background-color: #893434d4;
+  padding-top: 45px;
+}
+footer h3 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+header {
+  margin-bottom: 100px;
+}
+.homework-block {
+  margin-bottom: 100px;
+}
+.header-menu {
+  text-align: center;
+}
+.header-list-item {
+  display: inline-block;
+}
+.header-list-item:not(nth-last-child) {
+  margin-right: 15px;
+}
+.header-list-item:hover > a {
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
+}
+
+/* HomeWork 1 START */
+.homework1 {
+
+}
+.homework1-container {
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+  font-size: 0;
+  padding-block: 100px;
+}
+.homework1-container__list {
+  margin: 0 auto;
+  width: 500px;
+}
+.homework1-container__item {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #091133;
+  padding: 40px;
+  /* border-left: none; */
+}
+/* .homework1-container__item:nth-child(5n+5) {
+  border-left: none;
+} 
+.homework1-container__item:nth-child(5n+1) {
+  border-left: none;
+} 
+
+.homework1-container__item:nth-last-child(1n+1){
+  border-bottom: none;
+}
+.homework1-container__item:nth-child(-n+5){
+  border-top: none;
+}
+.homework1-container__item:last-child{
+  border-right: 1px solid #091133;
+} */
+
+
+.homework2-container__list {
+  margin: 0 auto;
+  width: 500px;
+}
+.homework2-container__item {
+  display: inline-block;
+  font-size: 0px;
+ 
+
+}
+.homework2-container__item > div {
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+    border: 1px solid #091133;
+  padding: 40px;
+}
+.homework2-container__item:last-child > div {
+  border-bottom: none;
+}
+.homework2-container__item > div:first-child {
+  border-left: none;
+}
+.homework2-container__item > div:nth-child(5) {
+  border-right: none;
+}
+.homework2-container__item > div {
+  border-left: none;
+  border-top: none;
+}
+
+
+
+.homework3-container__list {
+  margin: 0 auto;
+  width: 500px;
+}
+.homework3-container__item {
+  display: inline-block;
+  font-size: 0px;
+ width: 100%;
+
+}
+.homework3-container__item > div {
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+    border: 1px solid #091133;
+  padding: 40px;
+}
+.homework3-container__item:first-child > div:first-child {
+  border-top-left-radius: 20px;
+}
+.homework3-container__item:first-child > div:first-child {
+  border-top-left-radius: 20px;
+}.homework3-container__item:first-child > div:last-child {
+  border-top-right-radius: 20px;
+}
+.homework3-container__item:last-child > div:first-child {
+  border-bottom-left-radius: 20px;
+}.homework3-container__item:last-child > div:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.homework3-container__item > div:nth-child(n+2) {
+  border-left: none;
+}
+.homework3-container__item:not(:first-child) > div {
+  border-top: none;
+}
+.homework3-container__item:last-child > div{
+  float: left;
+}
+.homework3-container__item:last-child > div:last-child {
+  display: block;
+  width: 100%;
+  float: inherit;
+  border-bottom-left-radius: 20px;
+}
+
