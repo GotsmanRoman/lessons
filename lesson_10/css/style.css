@@ -112,26 +112,33 @@ header {
 }
 
 .hero-container__picture-block {
-  width: 570px;
-  height: 602px;
+  max-width: 570px;
+  aspect-ratio: 570/602;
   position: relative;
   z-index: 1;
   margin: 0 auto;
 }
-.hero-container__background-picture {
+.hero-container__content-picture {
   position: absolute;
-  width: 370px;
-  height: 370px;
+    inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-container__content-picture::before {
+  content: "";
+  position: absolute;
+  width: calc(370 / 5.7 * 1%);
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #32334c;
-  inset-block-start: 100px;
-  inset-inline-start: 100px;
+  inset-block-start: 17.54385964912281%;
+  inset-inline-start: 17.54385964912281%;
   z-index: -1;
 }
 .purple-block {
   position: relative;
-  width: 276px;
-  height: 305px;
+  width: calc(246 / 5.7 * 1%);
   cursor: pointer;
 }
 .purple-block:hover::before,
@@ -140,68 +147,69 @@ header {
 }
 .purple-block__image {
   position: absolute;
-  inset-block-start: 24px;
-  inset-inline-start: 21px;
+  inset-block-start: 8%;
+  inset-inline-start: 8%;
   z-index: 2;
+  max-width: 103.6585365853659%;
+  max-height: 107.7235772357724%;
 }
 .purple-block::before {
   content: "";
-  position: absolute;
-  width: 246px;
-  height: 246px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #b550f8;
 }
 .purple-block::after {
   content: "";
   position: absolute;
-  inset-block-start: 123px;
-  width: 246px;
-  height: 182px;
+  inset-block-start: 50%;
+  inset-inline-start: 0;
+  width: 100%;
+  height: calc(182 / 246 * 100%);
   background-color: #b550f8;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 .hero-container__twisted-arrow-image {
   position: absolute;
-  inset-block-start: 341px;
+  inset-block-start: 56.64451827242525%;
+  width: 24.91228070175439%;
 }
 .orange-block {
   position: absolute;
-  inset-block-start: 40px;
-  inset-inline-start: 304px;
+  inset-block-start: 6.644518272425249%;
+  inset-inline-start: 53.33333333333333%;
+  content: "";
+  width: calc(112 / 5.7 * 1%);
+  aspect-ratio: 1;
+  background-color: #ef6d58;
+  border-radius: 50%;
+
   cursor: pointer;
 }
-.orange-block:hover::before {
+.orange-block:hover {
   background-color: #eb2c0f;
 }
 
 .orange-block__image {
   position: absolute;
-  inset-block-start: 28px;
-  inset-inline-start: 35px;
-}
-.orange-block:before {
-  content: "";
-  position: absolute;
-  width: 112px;
-  height: 112px;
-  background-color: #ef6d58;
-  border-radius: 50%;
+  inset-block-start: 25%;
+  inset-inline-start: 31.25%;
+  max-width: 37.5%;
 }
 .hero-container__clouds-image {
   position: absolute;
-  inset-block-start: 80px;
-  inset-inline-start: 458px;
-}
-.hero-container__yellow-block {
-  position: absolute;
-  inset-block-start: 189px;
-  inset-inline-start: 324px;
+  inset-block-start: 13.2890365448505%;
+  inset-inline-end: 0;
+  width: 19.64912280701754%;
 }
 .yellow-block {
-  width: 246px;
-  height: 305px;
+  position: absolute;
+    inset-block-start: 33.15789473684211%;
+  inset-inline-start: 56.84210526315789%;
+  width: calc(246 / 5.7 * 1%);
   cursor: pointer;
 }
 .yellow-block:hover::after,
@@ -210,38 +218,42 @@ header {
 }
 .yellow-block__image {
   position: absolute;
-  inset-block-start: 36px;
+  inset-block-start: 14.63414634146341%;
+  inset-inline-start: 0px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   z-index: 2;
+  max-width: 100%;
 }
 .yellow-block::before {
   content: "";
-  position: absolute;
-  width: 246px;
-  height: 246px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #f7cc47;
 }
 .yellow-block::after {
   content: "";
   position: absolute;
-  inset-block-start: 123px;
-  width: 246px;
-  height: 182px;
+  inset-block-start: 50%;
+  inset-inline-start: 0;
+  width: 100%;
+  height: calc(182 / 246 * 100%);
   background-color: #f7cc47;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 .card-block {
   position: absolute;
-  inset-block-start: 431px;
-  inset-inline-start: 56px;
-  width: 214px;
-  height: 112px;
+  inset-block-start: 71.59468438538206%;
+  inset-inline-start: 9.824561403508772%;
+  width: 37.54385964912281%;
+  aspect-ratio: 1.910714285714286;
   background-color: #ffffff;
   border-radius: 6px;
   cursor: pointer;
+  padding: 18px;
 }
 .card-block:hover {
   background-color: #ffd900;
@@ -254,54 +266,58 @@ header {
 }
 .card-block__circle {
   position: absolute;
-  inset-block-start: 18px;
-  inset-inline-start: 17px;
-  width: 45px;
-  height: 45px;
+  inset-block-start: 16.07142857142857%;
+  inset-inline-start: 8.411214953271028%;
+  width: 21.02803738317757%;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #ef6d58;
 }
 .card-block__lines {
-  position: absolute;
-  inset-block-start: 27px;
-  inset-inline-start: 83px;
+  position: relative;
+  inset-block-start: 11.84210526315789%;
+  inset-inline-start: 37.07865168539326%;
   width: 100%;
   height: 100%;
 }
 .card-block__lines > :nth-child(1) {
-  width: 94px;
-  height: 14px;
+  position: absolute;
+  width: 52.80898876404494%;
+  /* height: 14px; */
+  aspect-ratio: 6.714285714285714;
   background-color: #dfe0e9;
   border-radius: 2px;
 }
 .card-block__lines > :nth-child(2) {
   position: absolute;
-  inset-block-start: 30px;
-  width: 78px;
-  height: 6px;
+  inset-block-start: 39.47368421052632%;
+  width: 44.31818181818182%;
+  aspect-ratio: 13;
   background-color: #dfe0e9;
   border-radius: 3px;
 }
 .card-block__lines > :nth-child(3) {
   position: absolute;
-  inset-block-start: 44px;
-  width: 94px;
-  height: 6px;
+  inset-block-start: 55.26315789473684%;
+  width: 52.80898876404494%;
+  aspect-ratio: 15.66666666666667;
   background-color: #dfe0e9;
   border-radius: 3px;
 }
 .card-block__lines > :nth-child(4) {
   position: absolute;
-  inset-block-start: 58px;
-  width: 62px;
-  height: 6px;
+  inset-block-start: 76.31578947368421%;
+  width: 35.22727272727273%;
+  aspect-ratio: 10.33333333333333;
   background-color: #dfe0e9;
   border-radius: 3px;
 }
 .hero-container__arrow-image {
   position: absolute;
-  inset-block-start: 530.46px;
-  inset-inline-start: 319.86px;
+  width: 14.56140350877193%;
+  height: 8.471760797342193%;
+  inset-block-start: 88.03986710963455%;
+  inset-inline-start: 56.14035087719298%;
   transform: rotate(46deg);
 }
 
@@ -360,8 +376,8 @@ header {
 .portfolio-block__image-container {
   position: relative;
   overflow: hidden;
-  height: 576px;
   max-width: 448px;
+  aspect-ratio: 448/576;
 }
 .portfolio-block__background {
   width: 100%;
