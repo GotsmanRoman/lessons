@@ -335,12 +335,13 @@ header {
   padding: 16px;
   display: inline-block;
   outline: 1px solid #3a3c56;
+  width: 33.33%;
 }
 
 .portfolio-block__button {
   position: absolute;
-  inset-block-start: 416px;
-  inset-inline-start: 48px;
+  inset-block-start: 72.22222222222222%;
+  inset-inline-start: 10.71428571428571%;
   padding-inline: 16px;
   padding-block: 5px 1px;
   background-color: #ffffff;
@@ -363,8 +364,8 @@ header {
 }
 .portfolio-block__title {
   position: absolute;
-  inset-block-start: 477px;
-  inset-inline-start: 48px;
+  inset-block-start: 82.8125%;
+  inset-inline-start: 10.71428571428571%;
   font-size: 40px;
   font-weight: 800;
   line-height: 120%;
