@@ -1046,7 +1046,7 @@ header {
     transform: rotate(0deg) scale(0.4);
   }
   71% {
-    transform: rotate(-1) scale(0.4);
+    transform: rotate(-1deg) scale(0.4);
   }
   100% {
     transform: rotate(-720deg) scale(0.4);
