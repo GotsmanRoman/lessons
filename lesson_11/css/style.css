@@ -121,6 +121,7 @@ top: 320px;
   text-underline-offset: 6px;
 }
 .homework1__trolleybus {
+  opacity: 0.1;
   position: relative;
   width: 760px;
   height: 200px;
