@@ -1148,7 +1148,7 @@ header {
   }
 }
 .founder__text {
-  background-image: url("/img/icons/quotes.svg");
+  background-image: url("../img/icons/quotes.svg");
   background-repeat: no-repeat;
   background-position: top 9px right 46px;
 
