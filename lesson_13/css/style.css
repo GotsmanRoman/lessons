@@ -436,7 +436,6 @@ header {
   height: 148px;
   position: relative;
   margin-bottom: 19px;
-  flex: 1 1 1px;
   left: -16px;
 
   transform: scale(0);
@@ -608,7 +607,6 @@ header {
   width: 282px;
   height: 242px;
   display: block;
-  top: 30px;
   position: absolute;
   top: -289px;
   left: -13px;
