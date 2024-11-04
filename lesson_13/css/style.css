@@ -908,7 +908,7 @@ header {
   width: 48px;
   aspect-ratio: 1;
 
-  background-image: url("/img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 24px;
@@ -938,7 +938,7 @@ header {
   width: 48px;
   aspect-ratio: 1;
 
-  background-image: url("/img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
