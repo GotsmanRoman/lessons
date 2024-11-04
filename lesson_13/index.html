@@ -202,10 +202,14 @@
                 <a class="benefits__button" href="#"><span>Contact Us</span></a>
               </div>
               <div class="benefits__element">
-                <img
-                  src="img/icons/block.svg"
-                  alt="Decoration element for benefits block"
-                />
+                <picture>
+                  <source srcset="
+                                      img/block_1x.png 1x,
+                                      img/block_1x.png 2x,
+                                      img/block_1x.png 3x
+                                    " type="image/png" />
+                  <img class="benefits__image-element" src="./img/block_1x.png" alt="Benefits block element" />
+                </picture>
               </div>
               <div class="benefits__girl-container">
                 <picture>

@@ -537,6 +537,38 @@ header {
     transform: scale(1) rotateX(360deg);
   }
 }
+.benefits__image-element {
+  position: relative;
+  z-index: 3;
+  border-radius: 6px;
+  box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+}
+.benefits__element::before {
+content: "";
+  background-color: #FFF;
+  height: 100%;
+  transform: translateY(8px) translateX(-50%);
+  width: 90.532%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  border-radius: 6px;
+  box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+}
+.benefits__element::after {
+content: "";
+  background-color: #FFF;
+  height: 100%;
+  transform: translateY(16px) translateX(-50%);
+  width: 81.065%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  border-radius: 6px;
+  box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+}
 .benefits__girl-container {
   position: relative;
   align-self: flex-end;
