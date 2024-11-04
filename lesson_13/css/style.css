@@ -569,7 +569,7 @@ header {
 
 .benefits__girl-container > picture::after {
   content: "";
-  background-image: url("/img/icons/cloud.svg");
+  background-image: url("../img/icons/cloud.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -756,7 +756,7 @@ header {
 }
 .events__time::before {
   content: "";
-  background-image: url("/img/icons/clock.svg");
+  background-image: url("../img/icons/clock.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 16px;
