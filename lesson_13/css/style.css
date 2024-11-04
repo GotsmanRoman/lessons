@@ -115,12 +115,13 @@ header {
   justify-content: center;
 }
 .portfolio__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 68px;
 }
 .portfolio__sub-title {
-  display: block;
   color: #ef6d58;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 200%;
@@ -153,7 +154,6 @@ header {
 .portfolio__title {
   color: #fff;
   text-align: center;
-
   font-size: 56px;
   font-weight: 800;
   line-height: 114.286%;
@@ -185,7 +185,7 @@ header {
   display: flex;
   gap: 60px;
   justify-content: center;
-  height: 40px;
+  min-height: 40px;
   overflow: hidden;
 }
 .portfolio__nav-item {
@@ -544,8 +544,8 @@ header {
   box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
 .benefits__element::before {
-content: "";
-  background-color: #FFF;
+  content: "";
+  background-color: #fff;
   height: 100%;
   transform: translateY(8px) translateX(-50%);
   width: 90.532%;
@@ -557,8 +557,8 @@ content: "";
   box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
 .benefits__element::after {
-content: "";
-  background-color: #FFF;
+  content: "";
+  background-color: #fff;
   height: 100%;
   transform: translateY(16px) translateX(-50%);
   width: 81.065%;
@@ -634,7 +634,6 @@ content: "";
 }
 .events__sub-title {
   color: #ef6d58;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 200%;
@@ -699,6 +698,8 @@ content: "";
   gap: 30px;
   margin-bottom: 64px;
   overflow: hidden;
+
+  color: #fff;
 }
 .events__item {
   display: flex;
@@ -757,21 +758,17 @@ content: "";
   align-items: center;
 }
 .events__day {
-  color: #fff;
-
   font-size: 72px;
   font-weight: 800;
   line-height: 111.111%;
   letter-spacing: -2px;
 }
 .events__month {
-  color: #fff;
   font-size: 24px;
   font-weight: 700;
   line-height: 133.333%;
 }
 .events__year {
-  color: #fff;
   font-size: 24px;
   font-weight: 700;
   line-height: 133.333%;
@@ -779,8 +776,6 @@ content: "";
 .events__time {
   display: flex;
   column-gap: 8px;
-
-  color: #fff;
 
   font-size: 16px;
   font-weight: 400;
@@ -802,7 +797,6 @@ content: "";
   flex-grow: 1;
 }
 .events__caption {
-  color: #fff;
   font-size: 24px;
   font-weight: 700;
   line-height: 133.333%;
@@ -819,7 +813,6 @@ content: "";
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
-  color: #fff;
 
   font-size: 16px;
   font-weight: 400;
@@ -1005,6 +998,8 @@ content: "";
   display: flex;
   column-gap: 30px;
   margin-bottom: 52px;
+
+  color: #fff;
 }
 
 .team__item {
@@ -1060,7 +1055,6 @@ content: "";
 }
 .team__name {
   display: block;
-  color: #fff;
 
   font-size: 24px;
   font-weight: 700;
@@ -1184,6 +1178,8 @@ content: "";
   background-repeat: no-repeat;
   background-position: top 9px right 46px;
 
+  color: #fff;
+
   opacity: 0;
   animation-name: founder__text-animation;
   animation-duration: 2.5s;
@@ -1232,8 +1228,6 @@ content: "";
   }
 }
 .founder__quotation {
-  color: #fff;
-
   font-size: 40px;
   font-weight: 800;
   line-height: 120%;
@@ -1260,8 +1254,6 @@ content: "";
   }
 }
 .founder__name {
-  color: #fff;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 160%;
