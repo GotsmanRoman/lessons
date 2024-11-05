@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #091133;
+  overflow-x: hidden;
+}
+
+h1 {
+  line-height: 3;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+footer {
+  min-height: 100px;
+  background-color: #893434d4;
+  padding-top: 45px;
+}
+footer h3 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+header {
+  margin-bottom: 100px;
+}
+.header-menu {
+  text-align: center;
+}
+.header-menu__item {
+  display: inline-block;
+}
+.header-menu__item--margin-right:not(:last-child) {
+  margin-right: 15px;
+}
+.header-menu__item:hover > a {
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
+}
+.sticky-nav {
+  position: fixed;
+  inset-block-start: 50%;
+  inset-inline-end: 0px;
+  width: 120px;
+  background-color: #c5e700;
+  z-index: 3;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5px;
+  margin-right: -80px;
+  transition: margin-right 0.5s ease-in-out;
+}
+.sticky-nav__title {
+  writing-mode: sideways-lr;
+  padding-inline: 15px;
+  padding-block-start: 5px;
+}
+.sticky-nav__list {
+  display: none;
+}
+.sticky-nav:hover {
+  margin-right: -10px;
+  padding: 10px;
+  font-size: 14px;
+}
+.sticky-nav:hover .sticky-nav__list {
+  display: block;
+}
+.sticky-nav:hover .sticky-nav__title {
+  display: none;
+}
+.sticky-nav__item--margin-bottom:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sticky-nav__item:hover > a {
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
+}
+
+/* HomeWork 1 START */
+.homework {
+  padding-top: 92px;
+  padding-bottom: 176px;
+  background-color: #28293e;
+}
+.personal {
+  margin-bottom: 132px;
+  color: #ddd;
+}
+.personal__wrapper {
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personal__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  background-color: #FFF;
+max-width: 560px;
+
+
+color: #697484;
+font-family: "Work Sans";
+font-size: 18px;
+font-weight: 400;
+line-height: 133.333%;
+}
+.personal__form > * {
+  width: 100%;
+
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid #E6E8EB;
+}
+.form-personal__budget {
+  max-width: 200px;
+}
+.form-personal__subject {
+  max-width: 336px;
+}
