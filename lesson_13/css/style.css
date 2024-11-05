@@ -327,6 +327,7 @@ header {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+
   transition: transform 0.3s ease-in-out;
 }
 
@@ -574,6 +575,8 @@ header {
   flex: 1 1 1px;
 }
 .benefits__work-image {
+  width: 239px;
+  height: 396px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1160,6 +1163,11 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  width: 100%;
+  object-fit: contain;
+  height: 420px;
+  object-position: bottom;
 }
 @keyframes founder__image-animation {
   0% {
