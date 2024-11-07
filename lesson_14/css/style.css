@@ -240,7 +240,8 @@ header {
   resize: vertical;
   min-height: 129px;
 }
-.dark__form > label > *:not(.form-dark__virtual-checkbox) {
+.dark__form > label > input :not(:last-child),
+.dark__form > label > textarea {
   border-radius: 6px;
   padding: 16px;
   background-color: #141414;
@@ -256,9 +257,8 @@ header {
   max-width: max-content;
 }
 .form-dark__checkbox {
-  visibility: hidden;
+  appearance: none;
   width: 0;
-  height: 0;
 }
 .form-dark__checkbox:checked ~ .form-dark__virtual-checkbox {
   background-color: #10a502;
