@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:400,600&display=swap");
 
 @import url("fonts.css");
 @import url("reset.css");
@@ -100,30 +101,28 @@ header {
 /* HomeWork 1 START */
 .homework {
   padding-top: 92px;
-  padding-bottom: 176px;
   background-color: #fff;
 }
+
 .personal {
   margin-bottom: 132px;
   color: #ddd;
 }
-.personal__wrapper {
+[class*="__container"] {
   max-width: 1200px;
   padding-inline: 15px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.personal__container-form {
+.personal__content {
   max-width: 560px;
+  margin: 0 auto;
 }
 .personal__header {
-color: #87909D;
-font-family: "Work Sans";
-font-size: 18px;
-font-weight: 400;
-line-height: 133.333%; /* 133.333% */
+  color: #87909d;
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%; /* 133.333% */
 
   margin-bottom: 50px;
 }
@@ -132,15 +131,12 @@ line-height: 133.333%; /* 133.333% */
   flex-wrap: wrap;
   gap: 24px;
   background-color: #fff;
-  max-width: 560px;
 
   color: #697484;
   font-family: "Work Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 133.333%;
-
-  
 }
 .personal__form > input {
   width: 100%;
@@ -151,11 +147,9 @@ line-height: 133.333%; /* 133.333% */
 
   transition: border 0.3s ease-in-out;
 }
-.personal__form > *:focus-visible  {
+.personal__form > *:focus-visible {
   outline: none;
-  border-bottom: 1.5px solid #A53DFF;
-
-  
+  border-bottom: 1.5px solid #a53dff;
 }
 .form-personal__budget {
   max-width: 200px;
@@ -165,8 +159,9 @@ line-height: 133.333%; /* 133.333% */
 }
 .form-personal__message {
   resize: vertical;
-    border-bottom: 1.5px solid #e6e8eb;
-    margin-bottom: 50px;
+  border-bottom: 1.5px solid #e6e8eb;
+  margin-bottom: 50px;
+  min-height: 48px;
 }
 .form-personal__button {
   display: flex;
@@ -191,5 +186,107 @@ line-height: 133.333%; /* 133.333% */
   height: 20px;
 }
 .form-personal__button:hover {
-  background-color: #8431CC;
+  background-color: #8431cc;
+}
+
+.dark {
+  background-color: #141414;
+  padding-block: 50px;
+}
+.dark__content {
+  margin: 0 auto;
+    max-width: 800px;
+}
+.dark__form {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  color: #999;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  background-color: #0f0f0f;
+  padding: 40px;
+  outline: 1px solid #262626;
+}
+.dark__form > label > * {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.dark__form > label > input:focus-visible,
+.dark__form > label > textarea:focus-visible {
+  outline: 1px solid rgb(255, 255, 255);
+}
+.dark__form > label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.dark__form > label:not(.form-dark__label-message) {
+  flex: 1 1 350px;
+}
+.form-dark__label-message {
+  flex-basis: 100%;
+}
+.form-dark__message {
+  resize: vertical;
+  min-height: 129px;
+}
+.dark__form > label > *:not(.form-dark__virtual-checkbox) {
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #141414;
+  margin-top: 12px;
+}
+.form-dark__label-checkbox {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: max-content;
+}
+.form-dark__checkbox {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.form-dark__checkbox:checked ~ .form-dark__virtual-checkbox {
+  background-color: #10a502;
+  border: none;
+}
+.form-dark__virtual-checkbox {
+  border-radius: 4px;
+  border: 1px solid #262626;
+  min-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.form-dark__button {
+  padding: 14px 20px;
+  border-radius: 6px;
+  background-color: #e50000;
+
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+
+  transition: background-color 0.3s ease-in-out;
+}
+.form-dark__button:hover {
+  background-color: #008020;
 }
