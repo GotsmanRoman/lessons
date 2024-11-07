@@ -101,7 +101,7 @@ header {
 .homework {
   padding-top: 92px;
   padding-bottom: 176px;
-  background-color: #28293e;
+  background-color: #fff;
 }
 .personal {
   margin-bottom: 132px;
@@ -115,30 +115,81 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+.personal__container-form {
+  max-width: 560px;
+}
+.personal__header {
+color: #87909D;
+font-family: "Work Sans";
+font-size: 18px;
+font-weight: 400;
+line-height: 133.333%; /* 133.333% */
 
+  margin-bottom: 50px;
+}
 .personal__form {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  background-color: #FFF;
-max-width: 560px;
+  background-color: #fff;
+  max-width: 560px;
 
+  color: #697484;
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%;
 
-color: #697484;
-font-family: "Work Sans";
-font-size: 18px;
-font-weight: 400;
-line-height: 133.333%;
+  
 }
-.personal__form > * {
+.personal__form > input {
   width: 100%;
 
-  padding-bottom: 14px;
-  border-bottom: 1.5px solid #E6E8EB;
+  outline: none;
+  padding-bottom: 13px;
+  border-bottom: 1.5px solid #e6e8eb;
+
+  transition: border 0.3s ease-in-out;
+}
+.personal__form > *:focus-visible  {
+  outline: none;
+  border-bottom: 1.5px solid #A53DFF;
+
+  
 }
 .form-personal__budget {
   max-width: 200px;
 }
 .form-personal__subject {
   max-width: 336px;
+}
+.form-personal__message {
+  resize: vertical;
+    border-bottom: 1.5px solid #e6e8eb;
+    margin-bottom: 50px;
+}
+.form-personal__button {
+  display: flex;
+  padding: 12px 24px;
+  border-radius: 4px;
+  align-items: center;
+  column-gap: 12px;
+
+  color: #fff;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  background-color: #a53dff;
+
+  transition: background-color 0.3s ease-in-out;
+}
+.form-personal__button::after {
+  content: "";
+  background-image: url("/img/icons/arrow.svg");
+  width: 20px;
+  height: 20px;
+}
+.form-personal__button:hover {
+  background-color: #8431CC;
 }
