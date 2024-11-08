@@ -46,11 +46,14 @@
               but the majority have suffered alte.
             </p>
             <form class="personal__form form-personal" enctype="multipart/form-data" action="#">
-              <input class="form-personal__name" type="text" placeholder="Name*" required>
-              <input class="form-personal__email" type="email" placeholder="Email*" required>
-              <input class="form-personal__location" type="text" placeholder="Location">
-              <input class="form-personal__budget" type="number" placeholder="Budget*" pattern="\d{1,9}" required>
-              <input class="form-personal__subject" type="text" placeholder="Subject*" required>
+              <input class="form-personal__input form-personal__input--name" type="text" placeholder="Name*" required>
+              <input class="form-personal__input form-personal__input--email" type="email" placeholder="Email*"
+                required>
+              <input class="form-personal__input form-personal__input--location" type="text" placeholder="Location">
+              <input class="form-personal__input form-personal__input--budget" type="number" placeholder="Budget*"
+                pattern="\d{1,9}" required>
+              <input class="form-personal__input form-personal__input--subject" type="text" placeholder="Subject*"
+                required>
               <textarea class="form-personal__message" placeholder="Message*" required></textarea>
               <button class="form-personal__button" type="submit">Submit</button>
             </form>
@@ -62,19 +65,16 @@
           <div class="dark__content">
             <form class="dark__form form-dark" enctype="multipart/form-data" action="#">
               <label for="form-dark__name">First Name
-                <input class="form-dark__name" id="form-dark__name" type="text" placeholder="Enter First Name" required>
+                <input id="form-dark__name" type="text" placeholder="Enter First Name" required>
               </label>
               <label for="form-dark__last-name">Last Name
-                <input class="form-dark__last-name" id="form-dark__last-name" type="text" placeholder="Enter Last Name"
-                  required>
+                <input id="form-dark__last-name" type="text" placeholder="Enter Last Name" required>
               </label>
               <label for="form-dark__email">Email
-                <input class="form-dark__email" id="form-dark__email" type="email" placeholder="Enter your Email"
-                  required>
+                <input id="form-dark__email" type="email" placeholder="Enter your Email" required>
               </label>
               <label for="form-dark__phone">Phone Number
-                <input class="form-dark__phone" id="form-dark__phone" type="tel" placeholder="Enter phone number"
-                  required>
+                <input id="form-dark__phone" type="tel" placeholder="Enter phone number" required>
               </label>
               <label class="form-dark__label-message" for="form-dark__message">Message
                 <textarea class="form-dark__message" id="form-dark__message" placeholder="Enter your Message"
