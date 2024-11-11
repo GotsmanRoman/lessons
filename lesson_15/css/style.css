@@ -102,11 +102,16 @@ header {
   padding-bottom: 176px;
   background-color: #28293e;
   font-family: Epilogue;
+  overflow: hidden;
 }
 [class*="__container"] {
   max-width: 1200px;
-  padding-inline: 15px;
+  padding-inline: 23px;
   margin: 0 auto;
+
+  @media (min-width: 1440px) {
+      padding-inline: 15px;
+  }
 }
 .wrap-button {
   text-align: center;
@@ -131,8 +136,12 @@ header {
   outline: 1px solid #b550f8;
 }
 .portfolio {
-  margin-bottom: 132px;
+  margin-bottom: 144px;
   color: #ddd;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 132px;
+  }
 }
 .portfolio__header {
   margin-bottom: 48px;
@@ -343,7 +352,7 @@ header {
   animation-fill-mode: forwards;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     flex: 1 1 calc(50% - 1rem);
   }
 }
@@ -356,8 +365,8 @@ header {
     opacity: 1;
   }
 }
-
-.portfolio__work-item:nth-child(4n + 1) {
+@media (min-width: 986px ) {
+  .portfolio__work-item:nth-child(4n + 1) {
   max-width: 470px;
 }
 .portfolio__work-item:nth-child(4n + 2) {
@@ -370,6 +379,8 @@ header {
 .portfolio__work-item:nth-child(4n + 4) {
   max-width: 470px;
 }
+}
+
 
 .portfolio__work-item a {
   display: flex;
@@ -378,6 +389,10 @@ header {
   color: inherit;
   width: 100%;
   height: 100%;
+
+      @media (min-width: 768px) {
+    flex: 1 1 calc(50% - 1rem);
+  }
 }
 .portfolio__work-image {
   position: absolute;
@@ -405,12 +420,16 @@ header {
   color: white;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  padding-inline: 48px;
+  padding-inline: 28px;
   padding-block: 51px;
   width: 100%;
   height: 100%;
 
   transition: background-color 0.3s ease-in-out;
+
+  @media (min-width: 1440px) {
+      padding-inline: 48px;
+  }
 }
 
 .portfolio__work-button {
@@ -649,7 +668,11 @@ header {
 }
 
 .events {
-  margin-bottom: 132px;
+  margin-bottom: 124px;
+
+  @media (min-width: 132px) {
+    
+  }
 }
 .events__wrapper {
   max-width: 1200px;
@@ -663,7 +686,11 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 64px;
+  margin-bottom: 35px;
+
+    @media (min-width: 1440px) {
+    margin-bottom: 64px;
+  }
 }
 .events__sub-title {
   color: #ef6d58;
@@ -673,7 +700,7 @@ header {
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   opacity: 0;
   transform: scale(0);
@@ -683,6 +710,11 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+
+  @media (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
 }
 
 @keyframes portfolio__sub-title-animation {
@@ -700,9 +732,9 @@ header {
   color: #fff;
   text-align: center;
 
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 800;
-  line-height: 114.286%;
+  line-height: 120%;
   letter-spacing: -1px;
 
   opacity: 0;
@@ -713,6 +745,11 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+    @media (min-width: 1440px) {
+    font-size: 56px;
+    line-height: 114.286%;
+  }
 }
 
 @keyframes portfolio__sub-title-animation {
@@ -728,21 +765,32 @@ header {
 
 .events__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   overflow: hidden;
 
   color: #fff;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 64px;
+  }
 }
 .events__item {
   display: flex;
   flex-direction: column;
   border-radius: 6px;
   border: 1px solid #3a3c56;
-  padding: 36px 40px;
-  flex: 1 1 1px;
+  padding-inline: 28px;
+  padding-block: 36px;
+  flex: 1 0 30%;
+  min-width: 290px;
 
   transform: translateY(100%);
+
+  @media (min-width: 1440px) {
+    padding-inline: 40px;
+  }
 }
 .events__item:nth-child(1) {
   animation-name: events__item-animation;
@@ -856,6 +904,8 @@ header {
 .team {
   margin-bottom: 180px;
 }
+.team__container {
+}
 .team__wrapper {
   max-width: 1200px;
   padding-inline: 15px;
@@ -903,9 +953,9 @@ header {
 .team__title {
   color: #fff;
 
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 800;
-  line-height: 114.286%;
+  line-height: 120%;
   letter-spacing: -1px;
 
   max-width: 550px;
@@ -917,6 +967,11 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  @media (min-width: 1440px) {
+    font-size: 56px;
+    line-height: 114.286%;
+  }
 }
 @keyframes team__title-animation {
   0% {
@@ -928,10 +983,14 @@ header {
 }
 
 .team__nav {
-  display: flex;
+display: none;
+
+  @media (min-width: 1440px) {
+      display: flex;
   align-self: flex-end;
   column-gap: 16px;
   font-size: 0;
+  }
 }
 .team__back-nav::before {
   content: "";
@@ -1001,16 +1060,25 @@ header {
 }
 .team__list {
   display: flex;
-  flex-wrap: wrap;
+
   column-gap: 30px;
   row-gap: 30px;
-  margin-bottom: 52px;
+  margin-bottom: 36px;
 
   color: #fff;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 52px;
+      flex-wrap: wrap;
+  }
 }
 
 .team__item {
-  flex: 0 1 270px;
+  flex: 1 0 270px;
+
+      @media (min-width: 1440px) {
+    flex: 0 1 270px;
+  }
 }
 
 .team__photo {
@@ -1023,7 +1091,11 @@ header {
   border: 1px solid #3a3c56;
   overflow: hidden;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+
+    @media (min-width: 1440px) {
+    margin-bottom: 25px;
+  }
 }
 .team__photo:hover {
   animation-name: team__photo-animation;
@@ -1128,21 +1200,29 @@ header {
 .founder__content {
   display: flex;
   column-gap: 30px;
+  row-gap: 30px;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: 749.98px) {
+    flex-direction: row;
+  }
 }
 .founder__photo {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  flex-basis: 570px;
-  min-height: 448px;
+  width: 100%;
+  /* min-height: 448px; */
   border-radius: 6px;
   background-image: url("../img/team/founder_background_1x.png");
   background-size: cover;
-  flex-shrink: 0;
+  flex-shrink: 1;
   overflow: hidden;
   box-shadow: 1px 7px 12px -1px #01010194;
+  padding-inline: 24px 29px;
+  padding-top: 16px;
 
   opacity: 0;
   animation-name: founder__photo-animation;
@@ -1151,6 +1231,12 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  @media (min-width:750px) {
+    flex-basis: 570px;
+      padding-inline: 42px 51px;
+  padding-top: 28px;
+  }
 }
 @keyframes founder__photo-animation {
   0% {
@@ -1173,7 +1259,7 @@ header {
 
   width: 100%;
   object-fit: contain;
-  height: 420px;
+  /* height: 420px; */
   object-position: bottom;
 }
 @keyframes founder__image-animation {
@@ -1242,9 +1328,9 @@ header {
   }
 }
 .founder__quotation {
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 120%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
 
   margin-bottom: 44px;
 
@@ -1256,6 +1342,12 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+      font-weight: 800;
+  line-height: 120%;
+  }
 }
 @keyframes founder__quotation-animation {
   0% {
