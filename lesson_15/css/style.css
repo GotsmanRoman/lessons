@@ -467,15 +467,26 @@ header {
   justify-content: space-between;
   background-color: #fdf0e9;
   border-radius: 6px;
-  padding-inline: 100px 84px;
+  padding-inline: 29px;
   align-items: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   column-gap: 38px;
+  flex-wrap: wrap;
+
+
+    @media (min-width: 1440px) {
+    padding-inline: 100px 84px;
+  }
 }
 .benefits__text-container {
   display: inline-block;
-  padding-block: 74px;
+  padding-top: 92px;
+  margin-bottom: 50px;
   flex: 1 1 1px;
+
+  @media (min-width: 1440px) {
+    padding-block: 74px;
+  }
 }
 .benefits__picture-container {
   display: flex;
@@ -486,7 +497,7 @@ header {
   position: absolute;
   margin-bottom: 19px;
   top: -72px;
-  left: 84px;
+  left: 12px;
 
   transform: scale(0);
   animation-name: benefits__picture-container-animation;
@@ -495,6 +506,10 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+    @media (min-width: 1440px) {
+    left: 84px;
+  }
 }
 
 @keyframes benefits__picture-container-animation {
@@ -577,6 +592,8 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  margin-bottom: 100px;
 }
 
 @keyframes benefits__element-animation {
