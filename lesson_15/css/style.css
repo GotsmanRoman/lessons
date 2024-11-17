@@ -801,10 +801,13 @@ header {
   padding-inline: 28px;
   padding-block: 36px;
   flex: 1 0 30%;
-  min-width: 290px;
+  
 
   transform: translateY(100%);
 
+    @media (max-width: 0px) and (min-width: 320px) {
+    min-width: 290px;
+  }
   @media (min-width: 1440px) {
     padding-inline: 40px;
   }
@@ -1290,10 +1293,10 @@ display: none;
   }
 }
 .founder__text {
-  flex-basis: 470px;
+  
   background-image: url("../img/icons/quotes.svg");
   background-repeat: no-repeat;
-  background-position: top 9px right 46px;
+  background-position: top 3% right 0%;
 
   color: #fff;
 
@@ -1304,6 +1307,13 @@ display: none;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+  @media (min-width:750px) {
+    flex-basis: 470px;
+  }
+  @media (min-width:1440px) {
+    background-position: top 3% right 12%;
+  }
 }
 @keyframes founder__text-animation {
   0% {
@@ -1323,7 +1333,7 @@ display: none;
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 
   transform: translateY(-100%);
   opacity: 0;
@@ -1333,6 +1343,11 @@ display: none;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-fill-mode: forwards;
+
+
+  @media (min-width: 1440px) {
+    margin-bottom: 33px;
+  }
 }
 @keyframes founder__sub-title-animation {
   0% {
@@ -1349,7 +1364,7 @@ display: none;
   font-weight: 700;
   line-height: 133.333%;
 
-  margin-bottom: 44px;
+  margin-bottom: 23px;
 
   transform: translateX(100%);
   opacity: 0;
@@ -1364,6 +1379,7 @@ display: none;
     font-size: 40px;
       font-weight: 800;
   line-height: 120%;
+  margin-bottom: 44px;
   }
 }
 @keyframes founder__quotation-animation {
