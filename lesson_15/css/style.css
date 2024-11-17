@@ -638,18 +638,21 @@ header {
   border-radius: 6px;
   box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
+.benefits__girl__block {
+  flex-basis: 196px;
+}
 .benefits__girl-container {
   position: relative;
   align-self: flex-end;
   flex-basis: 295px;
   padding-left: 53px;
   margin-top: -60px;
+  width: 100%;
 }
 .benefits__work-image {
   width: 100%;
   position: relative;
   z-index: 2;
-
   transform: scaleX(0);
   transform-origin: bottom;
   animation-name: benefits__work-image-animation;
@@ -669,19 +672,21 @@ header {
   }
 }
 
-.benefits__girl-container > picture::before {
+.benefits__girl-block::before {
   content: "";
   background-image: url("../img/icons/cloud.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   aspect-ratio: 282/242;
-  width: 100%;
+  width: 83%;
   display: block;
   position: absolute;
-  bottom: 47px;
-  right: 13px;
+  bottom: 16%;
+  right: 13%;
   z-index: 1;
+
+  max-width: 282px;
 }
 
 .events {
@@ -1444,3 +1449,6 @@ display: none;
     opacity: 1;
   }
 }
+
+
+
