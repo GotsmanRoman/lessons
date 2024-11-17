@@ -99,6 +99,17 @@ header {
 }
 
 /* HomeWork 1 START */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
 .homework {
   padding-top: 92px;
   background-color: #fff;
@@ -188,6 +199,9 @@ header {
 .form-personal__button:hover {
   background-color: #8431cc;
 }
+.form-personal__button:focus-visible {
+  outline: 2px solid rgb(28, 15, 206);
+}
 
 .dark {
   background-color: #141414;
@@ -229,6 +243,7 @@ header {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
+  cursor: pointer;
 }
 .dark__form > label:not(.form-dark__label-message) {
   flex: 1 1 350px;
@@ -240,7 +255,7 @@ header {
   resize: vertical;
   min-height: 129px;
 }
-.dark__form > label > input :not(:last-child),
+.dark__form > label > input:not(.form-dark__checkbox),
 .dark__form > label > textarea {
   border-radius: 6px;
   padding: 16px;
@@ -259,6 +274,12 @@ header {
 .form-dark__checkbox {
   appearance: none;
   width: 0;
+}
+.form-dark__checkbox:focus-visible ~ .form-dark__virtual-checkbox {
+  outline: 1px solid #10a502;
+}
+.form-dark__checkbox:focus-visible{
+opacity: 0;
 }
 .form-dark__checkbox:checked ~ .form-dark__virtual-checkbox {
   background-color: #10a502;
