@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:500,600,700&display=swap");
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #091133;
+  overflow-x: hidden;
+}
+
+h1 {
+  line-height: 3;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+footer {
+  min-height: 100px;
+  background-color: #893434d4;
+  padding-top: 45px;
+}
+footer h3 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+header {
+  margin-bottom: 100px;
+}
+.header-menu {
+  text-align: center;
+}
+.header-menu__item {
+  display: inline-block;
+}
+.header-menu__item--margin-right:not(:last-child) {
+  margin-right: 15px;
+}
+.header-menu__item:hover > a {
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
+}
+.sticky-nav {
+  position: fixed;
+  inset-block-start: 50%;
+  inset-inline-end: 0px;
+  width: 120px;
+  background-color: #c5e700;
+  z-index: 3;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5px;
+  margin-right: -80px;
+  transition: margin-right 0.5s ease-in-out;
+}
+.sticky-nav__title {
+  writing-mode: sideways-lr;
+  padding-inline: 15px;
+  padding-block-start: 5px;
+}
+.sticky-nav__list {
+  display: none;
+}
+.sticky-nav:hover {
+  margin-right: -10px;
+  padding: 10px;
+  font-size: 14px;
+}
+.sticky-nav:hover .sticky-nav__list {
+  display: block;
+}
+.sticky-nav:hover .sticky-nav__title {
+  display: none;
+}
+.sticky-nav__item--margin-bottom:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sticky-nav__item:hover > a {
+  color: rgb(6, 49, 167);
+  text-decoration: underline dotted 3px;
+  text-underline-offset: 6px;
+}
+
+/* HomeWork 1 START */
+.homework {
+  padding-top: 92px;
+  padding-bottom: 176px;
+  background-color: #1e1e1e;
+  font-family: Manrope;
+  overflow: hidden;
+}
+[class*="__container"] {
+  max-width: 1630px;
+  padding-inline: 15px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    padding-inline: 15px;
+  }
+}
+.header-must__title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.must__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.must__card {
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.must__image-block {
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.must__picture {
+  border-radius: 12px;
+}
+.must__description {
+  display: flex;
+  justify-content: space-between;
+}
+.must__length {
+  display: flex;
+  column-gap: 4px;
+  padding: 6px 10px;
+  border: 1px solid #262626;
+  background: #141414;
+  border-radius: 51px;
+  align-items: center;
+}
+.must__text-length {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+
+  @media (min-width: 1600px) {
+    font-size: 16px;
+  }
+}
+.must__rating-block {
+  display: flex;
+  padding: 6px 10px;
+  align-items: center;
+  column-gap: 4px;
+  justify-content: space-between;
+  border: 1px solid #262626;
+  background: #141414;
+  border-radius: 51px;
+}
+.must__stars {
+  display: flex;
+}
+.must__star-rating {
+}
+.must__star-rating--rotate {
+  transform: rotateY(180deg) translateX(0.5px);
+}
+.must__value-rating {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}
