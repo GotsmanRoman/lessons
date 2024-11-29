@@ -114,7 +114,7 @@ header {
     padding-inline: 80px;
     max-width: 1440px;
   }
-  @media (min-width: 1919.98px) {
+  @media (min-width: 1920px) {
     padding-inline: 160px;
     max-width: 1920px;
   }
@@ -123,8 +123,8 @@ header {
   margin-bottom: 40px;
 }
 .must__content {
-  @media (min-width: 1186px) {
-    max-width: 1156px;
+  @media (min-width: 1220px) {
+    max-width: 1200px;
     margin: 0 auto;
   }
   @media (min-width: 1440px) {
@@ -134,7 +134,7 @@ header {
     width: 100%;
     max-width: 1280px;
   }
-  @media (min-width: 1919.98px) {
+  @media (min-width: 1920px) {
     padding: 50px;
     border-radius: 12px;
     outline: 1px solid #262626;
@@ -253,8 +253,6 @@ header {
 
   @media (min-width: 1220px) {
     justify-content: center;
-  }
-  @media (min-width: 1440px) {
     gap: 20px;
   }
 }
@@ -266,7 +264,7 @@ header {
   outline: 1px solid #262626;
   background: #1a1a1a;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1176px) {
     padding: 16px;
   }
   @media (min-width: 1920px) {
@@ -274,18 +272,18 @@ header {
   }
 }
 .must__image-block {
-  border-radius: 12px;
+  /* border-radius: 12px; */
   margin-bottom: 12px;
 
-  @media (min-width: 1190px) {
+  @media (min-width: 1220px) {
     margin-bottom: 16px;
-    max-height: 324px;
-    height: 100%;
+    /* max-height: 324px;
+    height: 100%; */
   }
   @media (min-width: 1920px) {
     margin-bottom: 20px;
-    max-height: 404px;
-    height: 100%;
+    /* max-height: 404px;
+    height: 100%; */
   }
 }
 .must__picture {
@@ -293,6 +291,7 @@ header {
   width: 207px;
   height: 235px;
   object-fit: cover;
+  max-width: 253px;
 
   @media (min-width: 1010px) {
     width: 100%;
@@ -302,6 +301,7 @@ header {
   @media (min-width: 1920px) {
     width: 100%;
     height: 100%;
+    max-width: 320px;
     aspect-ratio: 320 / 404;
   }
 }
@@ -431,8 +431,8 @@ header {
 }
 
 .genres__content {
-  @media (min-width: 1186px) {
-    max-width: 1156px;
+  @media (min-width: 1220px) {
+    max-width: 1200px;
     margin: 0 auto;
   }
   @media (min-width: 1440px) {
@@ -441,6 +441,13 @@ header {
     outline: 1px solid #262626;
     width: 100%;
     max-width: 1280px;
+  }
+  @media (min-width: 1920px) {
+    padding: 50px;
+    border-radius: 12px;
+    outline: 1px solid #262626;
+    width: 100%;
+    max-width: 1920px;
   }
 }
 .genres__header {
@@ -552,8 +559,11 @@ header {
   margin-bottom: 20px;
   gap: 16px;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1220px) {
     gap: 20px;
+  }
+  @media (min-width: 1920px) {
+    gap: 30px;
   }
 }
 .genres__card {
@@ -562,11 +572,32 @@ header {
   outline: 1px solid #262626;
   background: #1a1a1a;
 
-  @media (min-width: 1010px) {
+  cursor: pointer;
+
+  @media (min-width: 1176px) {
     padding: 24px;
   }
+  @media (min-width: 1920px) {
+    padding: 30px;
+  }
 }
+
 .genres__image-block {
+  position: relative;
+  overflow: hidden;
+}
+.genres__image-block::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0) 20%, #1a1a1a 100%)
+    center / cover no-repeat;
+
+  transition: all 0.5s ease-in-out;
+}
+.genres__card:hover .genres__image-block::before {
+  transform: translateY(100%);
 }
 .genres__picture {
   border-radius: 12px;
@@ -580,6 +611,11 @@ header {
     height: 100%;
     aspect-ratio: 176 / 187;
   }
+  @media (min-width: 1920px) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 216 / 252;
+  }
 }
 .genres__description {
   display: flex;
@@ -590,6 +626,8 @@ header {
   font-size: 14px;
   font-weight: 600;
   line-height: 150%;
+
+  transition: transform 0.3s ease-in-out;
 
   @media (min-width: 1440px) {
     font-size: 16px;
@@ -602,8 +640,25 @@ header {
   background-image: url("../img/icons/genres_arrow_right.svg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  @media (min-width: 1440px) {
+    background-size: 24px;
+  }
+  @media (min-width: 1920px) {
+    background-size: 30px;
+  }
+}
+.genres__card:hover .genres__button {
+  transform: translateX(-10px) rotateZ(-180deg);
+}
+.genres__card:hover .genres__name {
+  transform: translateX(50%);
 }
 .genres__slider {
   display: flex;
